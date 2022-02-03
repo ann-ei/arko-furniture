@@ -258,3 +258,45 @@ color: #FFFFFF;
 .main-our-works__title {
     margin-bottom: 36px;
 }
+.main-contacts-container {
+    display: flex;
+}
+.main-contacts__info {
+    background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)),url(../../img/contacts-bg.jpg);
+    padding: 52px 227px 86px 54px;
+}
+.main-contacts__text {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.3;
+
+    color: #1D1818;
+
+    margin-top: 82px;
+    margin-bottom: 32px;
+
+}
+.main-contacts__link {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.3;
+
+    color: #1D1818;
+    
+}
+.main-contacts__btn {
+    background: #384685;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.3;
+
+    color: #FFFFFF;
+
+    padding: 15px 35px;
+    margin-top: 57px;
+
+}
+.main-contacts {
+    margin-bottom: 105px;
+}
