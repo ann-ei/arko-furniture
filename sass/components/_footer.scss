@@ -2,7 +2,7 @@
     background: #384685;
     margin-top: 71px;
 }
-.container.footer-container {
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding-top: 39px;
@@ -262,9 +262,18 @@ padding: 4px 18px;
 
 .copy {
     font-weight: 400;
-font-size: 16px;
-line-height: 21px;
+
 
 color: #DBDBDB;
 
+font-size: 20px;
+line-height: 1.3;
+
+padding-bottom: 30px;
+
+color: #DBDBDB;
+@media screen and (max-width:479px) {
+    font-size: 16px;
+line-height: 1.3;
+  }
 }

@@ -1132,7 +1132,7 @@ body .invisible-heading {
   margin-top: 71px;
 }
 
-.container.footer-container {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1144,7 +1144,7 @@ body .invisible-heading {
 }
 
 @media screen and (max-width: 767px) {
-  .container.footer-container {
+  .footer-container {
     display: block;
   }
 }
@@ -1467,8 +1467,17 @@ body .invisible-heading {
 
 .copy {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   color: #DBDBDB;
+  font-size: 20px;
+  line-height: 1.3;
+  padding-bottom: 30px;
+  color: #DBDBDB;
+}
+
+@media screen and (max-width: 479px) {
+  .copy {
+    font-size: 16px;
+    line-height: 1.3;
+  }
 }
 /*# sourceMappingURL=main.css.map */
