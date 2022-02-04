@@ -65,6 +65,17 @@
     justify-content: space-between;
     
 }
+.middle-header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width:1279px) {
+        display: block;
+          }
+}
+.header-logo {
+    margin-right: 20px;
+}
 .header-user {
     display: flex;
     align-items: center;
@@ -185,6 +196,10 @@
     transition: 200ms all linear;
 
     color: #1D1818;
+
+    @media screen and (max-width:1279px) {
+        display: none;
+          }
 }
 .bottom-header {
     background: #A8D1E7;

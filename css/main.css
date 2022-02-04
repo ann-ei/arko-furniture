@@ -860,6 +860,28 @@ body .invisible-heading {
           justify-content: space-between;
 }
 
+.middle-header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1279px) {
+  .middle-header__wrap {
+    display: block;
+  }
+}
+
+.header-logo {
+  margin-right: 20px;
+}
+
 .header-user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,6 +1042,12 @@ body .invisible-heading {
   -webkit-transition: 200ms all linear;
   transition: 200ms all linear;
   color: #1D1818;
+}
+
+@media screen and (max-width: 1279px) {
+  .header-user__link {
+    display: none;
+  }
 }
 
 .bottom-header {
