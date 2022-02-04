@@ -151,7 +151,9 @@
 
     color: #1D1818;
 
-    padding: 14px 74px 14px 74px;
+    padding: 14px 0;
+    width: 100%;
+    margin-right: 20px;
 
     border: 1px solid #384685;
     border-radius: 5px;
@@ -299,7 +301,9 @@ color: #FFFFFF;
 }
 .main-contacts__info {
     background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)),url(../../img/contacts-bg.jpg);
-    padding: 52px 227px 86px 54px;
+    // padding: 52px 227px 86px 54px;
+    padding: 52px;
+    width: 50%;
 }
 .main-contacts__text {
     font-weight: 700;
@@ -331,8 +335,13 @@ color: #FFFFFF;
 
     padding: 15px 35px;
     margin-top: 57px;
+    display: block;
 
 }
 .main-contacts {
     margin-bottom: 105px;
+}
+
+.main-contacts__map {
+    width: 50%;
 }

@@ -550,7 +550,9 @@ body .invisible-heading {
   font-size: 20px;
   line-height: 1.3;
   color: #1D1818;
-  padding: 14px 74px 14px 74px;
+  padding: 14px 0;
+  width: 100%;
+  margin-right: 20px;
   border: 1px solid #384685;
   border-radius: 5px;
   background: transparent;
@@ -721,7 +723,8 @@ body .invisible-heading {
 .main-contacts__info {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(243, 231, 198, 0.6)), to(rgba(243, 231, 198, 0.6))), url(../../img/contacts-bg.jpg);
   background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)), url(../../img/contacts-bg.jpg);
-  padding: 52px 227px 86px 54px;
+  padding: 52px;
+  width: 50%;
 }
 
 .main-contacts__text {
@@ -749,10 +752,15 @@ body .invisible-heading {
   color: #FFFFFF;
   padding: 15px 35px;
   margin-top: 57px;
+  display: block;
 }
 
 .main-contacts {
   margin-bottom: 105px;
+}
+
+.main-contacts__map {
+  width: 50%;
 }
 
 .header {
@@ -1157,6 +1165,12 @@ body .invisible-heading {
   line-height: 1.3;
 }
 
+@media screen and (max-width: 1559px) {
+  #footer-categories__link {
+    font-size: 16px;
+  }
+}
+
 .footer-address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,6 +1203,12 @@ body .invisible-heading {
   font-size: 18px;
   line-height: 1.3;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1559px) {
+  .footer-address__text--right a {
+    font-size: 14px;
+  }
 }
 
 .footer-inst {
