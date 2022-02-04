@@ -7,9 +7,20 @@
     justify-content: space-between;
     padding-top: 39px;
     padding-bottom: 43px;
+
+    @media screen and (max-width:767px) {
+        display: block;
+      }
 }
 .footer-logo {
     margin-bottom: 25px;
+    @media screen and (max-width:767px) {
+        text-align: center;
+      }
+
+      @media screen and (max-width:479px) {
+        text-align: left;
+      }
 }
 
 .footer-phone {
@@ -18,15 +29,33 @@
     line-height: 1.3;
 
     color: #FFFFFF;
+
+    @media screen and (max-width:767px) {
+        display: block;
+    text-align: center;
+    margin-bottom: 35px;
+      }
+
+      @media screen and (max-width:479px) {
+    text-align: left;
+      }
+
+    
 }
 .footer-categories__item {
     margin-bottom: 25px;
+    @media screen and (max-width:1023px) {
+        display: none;
+      }
 }
 .footer-categories__item a {
     color: #fff;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3;
+    @media screen and (max-width:1559px) {
+        font-size: 14px;
+      }
 
 }
 #footer-categories__link {
@@ -40,9 +69,33 @@ line-height: 1.3;
 .footer-address {
     display: flex;
     margin-top: 20px;
+
+    @media screen and (max-width:767px) {
+        justify-content: space-around;
+      }
+      @media screen and (max-width:479px) {
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+    
 }
 .footer-address--left {
     margin-right: 26px;
+    @media screen and (max-width:1279px) {
+        display: none;
+      }
+
+      @media screen and (max-width:767px) {
+        display: block;
+      }
+
+      @media screen and (max-width:479px) {
+        width: 38%;
+      margin-right: 0;
+      }
+
+      
 }
 .footer-address__text--left {
     font-weight: 400;
@@ -51,6 +104,10 @@ line-height: 1.3;
     margin-bottom: 15px;
 
     color: #FFFFFF;
+
+    @media screen and (max-width:479px) {
+        font-size: 14px;
+          }
 }
 .footer-address__text--right {
     font-weight: 700;
@@ -59,6 +116,17 @@ line-height: 1.3;
     margin-bottom: 15px;
 
     color: #FFFFFF;
+    @media screen and (max-width:1279px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width:767px) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width:479px) {
+        font-size: 14px;
+      }
 
 }
 .footer-address__text--right a {
@@ -67,12 +135,24 @@ line-height: 1.3;
     line-height: 1.3;
 
     color: #FFFFFF;
-    @media screen and (max-width:1559px) {
+    @media screen and (max-width:1279px) {
         font-size: 14px;
       }
+
+      @media screen and (max-width:767px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width:479px) {
+        font-size: 14px;
+      }
+    
 }
 .footer-inst {
     margin-top: 67px;
+
+    @media screen and (max-width:479px) {
+        display: none;
+      }
 }
 .footer-inst__title {
     font-weight: 700;
@@ -80,7 +160,111 @@ line-height: 1.3;
     line-height: 1.3;
 
     color: #FFFFFF;
+    @media screen and (max-width:1279px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width:767px) {
+        text-align: center;
+      }
 }
 .footer-inst__img {
     width: 60px;
+
+    @media screen and (max-width:767px) {
+        margin: 0 auto;
+      }
+
+    
+}
+
+.wrapper-footer--mob {
+    display: none;
+
+    @media screen and (max-width:1023px) {
+        display: flex;
+        justify-content: space-between;
+      }
+}
+.footer-categories__item--mob a {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.3;
+
+color: #FFFFFF;
+
+@media screen and (max-width:1023px) {
+    font-size: 19px;
+line-height: 2.3;
+  }
+
+  @media screen and (max-width:479px) {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+
+}
+
+.footer-categories__list--mob {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.footer-phone__icon {
+    display: none;
+
+    @media screen and (max-width:479px) {
+        display: inline-block;
+        fill: #fff;
+        margin-right: 5px;
+      }
+}
+.footer-btn {
+    display: none;
+    @media screen and (max-width:479px) {
+        display: inline-block;
+
+        font-weight: 700;
+font-size: 18px;
+line-height: 1.3;
+
+color: #FFFFFF;
+
+background: #E13B3F;
+border: 1px solid #E13B3F;
+border-radius: 2px;
+padding: 4px 18px;
+
+      }
+}
+.footer-inst.mob-inst {
+    display: none;
+
+    @media screen and (max-width:479px) {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        p {
+            font-size: 16px;
+            text-align-last: left;
+        }
+
+        div {
+            width: 45px;
+            margin: 0;
+        }
+      }
+}
+
+.copy {
+    font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #DBDBDB;
+
 }
