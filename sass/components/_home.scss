@@ -52,11 +52,17 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-}
+
+} 
 .main-catalog__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    
 }
 .section__title-catalog {
     margin-bottom: 39px;
@@ -69,13 +75,31 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+
+    @media screen and (max-width:1559px) {
+        margin-left: -20px;
+    margin-top: -20px;
+      }
 }
+
 .main-popular__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
     padding: 37px 37px 20px 37px; 
+    @media screen and (max-width:1559px) {
+        margin-left: 20px;
+    margin-top: 20px;
+    flex-basis: calc(100% / 4 - 20px);
+      }
+      @media screen and (max-width:1439px) {
+    flex-basis: calc(100% / 3 - 20px);
+      }
+      @media screen and (max-width:1279px) {
+        padding: 9px 15px 20px 15px; 
+          }
 }
+
 .main-popular__title {
     font-weight: 400;
     font-size: 18px;
@@ -195,10 +219,22 @@
     margin-bottom: 96px;
 }
 
-.main-inst__img {
-    width: 1173px;
-    margin: 42px auto 0 auto;
+.main-inst__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 40px 175px;
 
+    @media screen and (max-width:1279px) {
+        padding: 40px 75px;
+          }
+}
+
+.main-inst__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px; 
 }
 
 .main-our-works__wrap {
@@ -242,7 +278,7 @@
     background: #384685;
     z-index: 999;
 
-    p{
+    p, a{
         font-weight: 400;
 font-size: 22px;
 line-height: 28px;

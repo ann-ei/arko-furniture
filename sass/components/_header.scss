@@ -172,8 +172,11 @@
     }
 }
 .header-user__icon {
-    margin-bottom: 11px;
     transition: 200ms all linear;
+    margin-bottom: 11px;
+}
+.header-favorites__icon {
+    margin-right: 14px;
 }
 .header-user__link {
     font-weight: 400;
@@ -217,5 +220,28 @@ border-radius: 5px;
 color: #fff;
 padding-left: 15px;
 padding-right: 15px;
+    }
+}
+
+.header-favorites__img-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+}
+.header-favorites__img {
+    position: relative;
+    
+
+    span {
+        position: absolute;
+        top: 0;
+        right: 14px;
+
+        font-weight: 400;
+font-size: 14px;
+line-height: 1.3;
+
+color: #FFFFFF;
+
     }
 }
