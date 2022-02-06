@@ -471,13 +471,24 @@ color: #1D1818;
     &:hover {
         box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.1);
 border-radius: 5px;
+
+@media screen and (max-width:767px) {
+    box-shadow: none;
+border-radius: 0;
+      }
     }
     &:hover .main-popular__sizes {
         display: flex;
+
+        @media screen and (max-width:767px) {
+            display:  none;
+              }
     }
 
     &:hover .main-popular__squares {
         display: flex;
+
+        
     }
 }
 .main-categories {
@@ -672,7 +683,7 @@ color: #FFFFFF;
           }
 }
 .main-contacts__info {
-    background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)),url(../../img/contacts-bg.jpg);
+    background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)),url(../img/contacts-bg.jpg);
     // padding: 52px 227px 86px 54px;
     padding: 52px;
     width: 50%;

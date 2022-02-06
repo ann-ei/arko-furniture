@@ -929,10 +929,24 @@ span.main-popular__label {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 767px) {
+  .main-popular__item:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+}
+
 .main-popular__item:hover .main-popular__sizes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .main-popular__item:hover .main-popular__sizes {
+    display: none;
+  }
 }
 
 .main-popular__item:hover .main-popular__squares {
@@ -1183,8 +1197,8 @@ span.main-popular__label {
 }
 
 .main-contacts__info {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(243, 231, 198, 0.6)), to(rgba(243, 231, 198, 0.6))), url(../../img/contacts-bg.jpg);
-  background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)), url(../../img/contacts-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(243, 231, 198, 0.6)), to(rgba(243, 231, 198, 0.6))), url(../img/contacts-bg.jpg);
+  background-image: linear-gradient(to right, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.6)), url(../img/contacts-bg.jpg);
   padding: 52px;
   width: 50%;
   background-size: cover;
