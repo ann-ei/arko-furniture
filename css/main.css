@@ -537,12 +537,11 @@ body .invisible-heading {
     text-align: center;
     padding: 0;
   }
-}
-
-ul.main-catalog__list .main-our-works__text a {
-  font-size: 11px;
-  font-weight: bold;
-  color: #1D1818;
+  ul.main-catalog__list .main-our-works__text a {
+    font-size: 11px;
+    font-weight: bold;
+    color: #1D1818;
+  }
 }
 
 .section__title-catalog {
@@ -1551,11 +1550,11 @@ span.main-popular__label {
 }
 
 .header-sign-in:hover a {
-  color: #EE3C3F;
+  color: #384685;
 }
 
 .header-sign-in:hover svg {
-  fill: #EE3C3F;
+  fill: #384685;
 }
 
 .header-favorites {
@@ -1594,11 +1593,11 @@ span.main-popular__label {
 }
 
 .header-shopping-cart:hover a {
-  color: #EE3C3F;
+  color: #384685;
 }
 
 .header-shopping-cart:hover svg {
-  fill: #EE3C3F;
+  fill: #384685;
 }
 
 .header-user__icon {
