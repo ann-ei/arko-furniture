@@ -119,6 +119,15 @@
 }
 .header-phone__wrap {
     margin-bottom: 11px;
+
+    &:hover a {
+        color: #384685;
+        
+    }
+
+    &:hover svg {
+        fill: #384685;
+    }
 }
 .header-phone__link {
     font-weight: 700;
@@ -126,6 +135,8 @@
     line-height: 1.3;
 
     color: #1D1818;
+
+    transition: 200ms all linear;
 }
 .header-phone__btn {
     font-weight: 400;
