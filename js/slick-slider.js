@@ -1,3 +1,16 @@
+window.addEventListener("resize", function() {
+  if (window.innerWidth <= 768) {
+    $('.slider').slick('unslick');
+    sliderIsLive = false;
+  }
+  else {
+    if (sliderIsLive) {
+      $('.slider').slick();
+      sliderIsLive = true;
+    }
+  }
+});
+
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
@@ -15,10 +28,9 @@ $(document).ready(function(){
           },
           {
             breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            }
+            
+              settings: "unslick",
+            
           }
         ]
 		
