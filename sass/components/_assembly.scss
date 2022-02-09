@@ -1,0 +1,27 @@
+.assembly__table {
+    background: #F8F8F8;
+    border-collapse: collapse;
+box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+    th {
+        text-align: center;
+        padding: 18px 137px;
+        border: 1px solid #BDBDBD;
+    }
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 10px;
+        border: 1px solid #BDBDBD;
+
+        &:nth-child(2) {
+            text-align: center;
+        }
+    }
+}
+.assembly__text {
+    margin-bottom: 30px;
+}
+.assembly__section {
+    margin-bottom: 90px;
+}

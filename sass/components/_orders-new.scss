@@ -1,0 +1,15 @@
+.orders-new__table {
+    text-align: left;
+    width: 75%;
+
+    th {
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    td {
+        border-bottom: 1px solid #E2E2E2;
+    }
+}
+.orders-empty__content.orders-new__content {
+    justify-content: space-between;
+}
