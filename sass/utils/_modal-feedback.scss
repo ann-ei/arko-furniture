@@ -78,6 +78,11 @@
     border-radius: 5px;
     padding: 18px 33px;
     margin-top: 16px;
+    transition: 100ms all linear;
+
+    &:hover {
+        background: #182560;
+    }
 }
 .modal-feedback__close {
     background: transparent;

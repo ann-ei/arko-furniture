@@ -2908,6 +2908,12 @@ ul.pagination li a.active {
   border-radius: 5px;
   padding: 18px 33px;
   margin-top: 16px;
+  -webkit-transition: 100ms all linear;
+  transition: 100ms all linear;
+}
+
+.modal-feedback__btn:hover {
+  background: #182560;
 }
 
 .modal-feedback__close {
