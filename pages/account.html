@@ -350,76 +350,69 @@ height="20"
                     </ul>
                 </div>
 
-                <form class="account-form__content">
+                  <div class="account-form">
                     <div class="account-form__user">
-                        <h3 class="account-form__title">ЛИЧНЫЕ ДАННЫЕ</h3>
+                      <h3 class="account-form__title">ЛИЧНЫЕ ДАННЫЕ</h3>
 
-                        <div class="account-form__user__content">
-
-                            <label class="account-form__label">
-                                Имя*
-                                <input type="text" class="account-form__input">
-                            </label>
-
-                            <label class="account-form__label">
-                                Отчество
-                                <input type="text" class="account-form__input">
-                            </label>
-                            
-                            <label class="account-form__label">
-                                Фамилия*
-                                <input type="text" class="account-form__input">
-                            </label>
-                            
-                            <label class="account-form__label">
-                                Телефон*
-                                <input type="tel" class="account-form__input">
-                            </label>
-                            
-                            <label class="account-form__label">
-                                E-mail*
-                                <input type="email" class="account-form__input">
-                            </label>
-                            
-                            <label class="account-form__label">
-                                Пароль*
-                                <input type="button" class="account-form__input">
-                            </label>
-
-
+                      <div class="account-form__wrap">
+                        <div class="account-form__item">
+                          <span class="account-form__label">Имя*</span>
+                          <input type="text" class="account-form__input" value="Иван">
                         </div>
-                    </div>
 
+                        <div class="account-form__item">
+                          <span class="account-form__label">Отчество</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">Фамилия*</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">Телефон*</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">E-mail*</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">Пароль*</span>
+                          <input type="button" class="account-form__btn" value="СМЕНИТЬ ПАРОЛЬ">
+                        </div>
+                      </div>
+                    </div>
 
                     <div class="account-form__address">
-                        <h3 class="account-form__title">АДРЕС ДОСТАВКИ</h3>
+                      <h3 class="account-form__title">АДРЕС ДОСТАВКИ</h3>
 
-                        <div class="account-form__user__content">
-
-                            <label class="account-form__label">
-                                Регион*
-                                <input type="text" class="account-form__input">
-                            </label>
-
-                            <label class="account-form__label">
-                                Улица *
-                                <input type="text" class="account-form__input">
-                            </label>
-                            
-                            <label class="account-form__label">
-                                Город*
-                                <input type="text" class="account-form__input">
-                            </label>
-                            
-                            <label class="account-form__label">
-                                Дом*
-                                <input type="number" class="account-form__input">
-                            </label>
-
-
+                      <div class="account-form__wrap">
+                        <div class="account-form__item">
+                          <span class="account-form__label">Имя*</span>
+                          <input type="text" class="account-form__input">
                         </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">Имя*</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">Имя*</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+
+                        <div class="account-form__item">
+                          <span class="account-form__label">Имя*</span>
+                          <input type="text" class="account-form__input">
+                        </div>
+                      </div>
                     </div>
-                </form>
+                  </div>
 
             </div>
             </div>
@@ -444,6 +437,43 @@ height="20"
               </div>
             </div>
           </section>
+
+          <div class="backdrop is-hidden" data-backdrop>
+            <div class="modal-feedback">
+              <h2 class="modal__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
+    
+              <form action="" class="modal-feedback__form">
+    
+              <div class="modal-feedback__field">
+                <label class="modal-feedback__label">
+                  Имя*
+                  <input type="text" class="modal-feedback__input" placeholder="Иван">
+                </label>
+              </div>
+    
+              <div class="modal-feedback__field">
+                <label class="modal-feedback__label">
+                  Телефон*
+                  <input type="tel" class="modal-feedback__input" placeholder="+7 (000) 000 00 00">
+                </label>
+              </div>  
+    
+              <p class="modal-feedback__text">* - поля, обязательные для заполнения</p>
+    
+              <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+    
+              </form>
+    
+              <button class="modal-feedback__close" data-modal-close>
+                <svg
+                  width="20"
+                  height="20"
+                >
+                  <use href="../img/sprite.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
     </main>
 
     <footer class="footer">

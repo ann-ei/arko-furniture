@@ -289,7 +289,102 @@ height="20"
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="item">
+        <div class="container">
+
+          <div class="breadcrumps">
+            <a href="#">Главная</a> > <span>Оформление заказа</span>
+        </div>
+
+          <div class="item-wrap">
+
+          <div class="item-slider">
+            <div class="slider-for">
+
+              <div class="item-slide">
+              <img src="../img/item/item-1.jpg" alt="">
+            </div>
+
+            <div class="item-slide">
+              <img src="../img/item/item-2.jpg" alt="">
+            </div>
+
+            <div class="item-slide">
+              <img src="../img/item/item-3.jpg" alt="">
+            </div>
+
+            <div class="item-slide">
+              <img src="../img/item/item-4.jpg" alt="">
+            </div>
+
+            </div>
+
+            <div class="slider-nav">
+              <div class="item-slide">
+              <img src="../img/item/item-1.jpg" alt="">
+            </div>
+
+              <div class="item-slide">
+              <img src="../img/item/item-2.jpg" alt="">
+            </div>
+
+             <div class="item-slide">
+              <img src="../img/item/item-3.jpg" alt="">
+            </div>
+
+              <div class="item-slide">
+              <img src="../img/item/item-4.jpg" alt="">
+            </div>
+
+            </div>
+          </div>
+
+          <div class="item-content"></div>
+
+        </div>
+
+        </div>
+      </section>
+
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal-feedback">
+          <h2 class="modal__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
+
+          <form action="" class="modal-feedback__form">
+
+          <div class="modal-feedback__field">
+            <label class="modal-feedback__label">
+              Имя*
+              <input type="text" class="modal-feedback__input" placeholder="Иван">
+            </label>
+          </div>
+
+          <div class="modal-feedback__field">
+            <label class="modal-feedback__label">
+              Телефон*
+              <input type="tel" class="modal-feedback__input" placeholder="+7 (000) 000 00 00">
+            </label>
+          </div>  
+
+          <p class="modal-feedback__text">* - поля, обязательные для заполнения</p>
+
+          <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+
+          </form>
+
+          <button class="modal-feedback__close" data-modal-close>
+            <svg
+              width="20"
+              height="20"
+            >
+              <use href="../img/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </main>
 
     <footer class="footer">
         <div class="container ">
@@ -458,6 +553,9 @@ height="20"
     </footer>
 
     <script src="../js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/slick-slider.js"></script>
     
 </body>
 </html>
