@@ -350,21 +350,62 @@ height="20"
                         </ul>
                     </div>
 
-                    <table class="orders-new__table">
-                        <tr>
-                            <th>Номер заказа</th>
-                            <th>Дата создания</th>
-                            <th>Статус</th>
-                            <th>Сумма</th>
-                        </tr>
+                    
 
-                        <tr>
-                            <td><b>7582</b></td>
-                            <td>19.01.2022</td>
-                            <td>Новый</td>
-                            <td>10 000</td>
-                        </tr>
-                    </table>
+                    <div class="orders-new__table">
+                      <div class="orders-new__table-name">
+                        <div class="orders-new__table-number">Номер заказа</div>
+                        <div class="orders-new__table-date">Дата создания</div>
+                        <div class="orders-new__table-status">Статус</div>
+                        <div class="orders-new__table-sum">Сумма</div>
+                      </div>
+
+                      <div class="orders-new__item">
+                        <a href="#" class="orders-new__table-order content_toggle">
+                          
+                          <div class="orders-new__table-number">
+                            <div class="orders-new__item-plus">+</div>
+
+                            <span>7582</span>
+                          </div>
+                          <div class="orders-new__table-date">19.01.2022</div>
+                          <div class="orders-new__table-status"> <span class="order-new__status"></span> Новый</div>
+                          <div class="orders-new__table-sum">17 968 руб.</div>
+
+
+                        </a>
+                        <div class="content_block" style="display: none;">
+                          <div class="orders-new__content">
+                            <div class="orders-new__img">
+                              <img src="../img/cart/cart-item.jpg" alt="">
+                            </div>
+                            <div class="orders-new__content-name">Кухня Готовая Вега белый 2000</div>
+                            <div class="orders-new__quantity">
+                              <span>1 шт</span>
+                              <span>17 168 руб.</span>
+                            </div>
+                          </div>
+
+                          <div class="orders-new__content">
+                            <div class="orders-new__img">
+                              <svg width="80" height="59">
+                                <use href="../img/sprite.svg#icon-delivery-cart"></use>
+                              </svg>
+                            </div>
+                            <div class="orders-new__content-name">Доставка по городу по адресу:
+                              <span>РФ г Краснодар, ул. Московская 144 корпус-1 (ЖК Светлый)</span>
+                            </div>
+                            <div class="orders-new__quantity">
+                              <span></span>
+                              <span>800 руб.</span>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      
+                    </div>
 
 
                 </div>
@@ -576,7 +617,9 @@ height="20"
         </div>
       </footer>
 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="../js/modal.js"></script>
+      <script src="../js/accordion.js"></script>
     
 </body>
 </html>
