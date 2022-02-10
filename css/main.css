@@ -539,6 +539,12 @@ body .invisible-heading {
   background: #182560;
 }
 
+@media screen and (max-width: 767px) {
+  .main-catalog__item:hover .main-our-works__text {
+    background: #A8D1E7;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .main-catalog__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
@@ -619,6 +625,13 @@ span.main-popular__label {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .label-discount {
+    width: 63px;
+    padding: 22px 0;
+  }
+}
+
 .label-heet {
   background-image: url(../img/green-label.svg);
   padding: 7px 0;
@@ -633,7 +646,9 @@ span.main-popular__label {
 
 @media screen and (max-width: 767px) {
   .label-heet {
-    top: 2px !important;
+    top: -4px !important;
+    width: 52px;
+    padding: 3px 0;
   }
 }
 

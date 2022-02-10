@@ -118,6 +118,10 @@ color: #000000;
 
     &:hover .main-our-works__text {
         background: #182560;
+
+        @media screen and (max-width:767px) {
+            background: #A8D1E7;
+              }
     }
 
     @media screen and (max-width:1023px) {
@@ -196,6 +200,10 @@ span.main-popular__label {
     display: block;
     color: #fff;
     text-align: center;
+    @media screen and (max-width:767px) {
+        width: 63px;
+        padding: 22px 0;
+      }
 }
 .label-heet {
     background-image: url(../img/green-label.svg);
@@ -209,7 +217,9 @@ span.main-popular__label {
     top: 22px !important;
 
     @media screen and (max-width:767px) {
-        top: 2px !important;
+        top: -4px !important;
+        width: 52px;
+        padding: 3px 0;
       }
 }
 .main-popular__list {
