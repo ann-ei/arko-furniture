@@ -400,8 +400,10 @@
     }
 }
 .tabContent-delivery {
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 3px solid #E2E2E2;
 }
 .item-tabs__payment {
     margin-left: 40px;
@@ -422,3 +424,19 @@
     
     color: #1D1818;
     }
+.item-tabs__payment-item {
+    svg {
+        margin-right: 15px;
+    }
+}
+.item-tabs__payment-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+.item-tabs__payment-item {
+    flex-basis: calc(100% / 2 - 50px);
+    margin-left: 50px;
+    margin-top: 50px;
+}

@@ -3404,12 +3404,14 @@ ul.pagination li a.active {
 }
 
 .tabContent-delivery {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: 3px solid #E2E2E2;
 }
 
 .item-tabs__payment {
@@ -3429,5 +3431,26 @@ ul.pagination li a.active {
   font-size: 18px;
   line-height: 1.3;
   color: #1D1818;
+}
+
+.item-tabs__payment-item svg {
+  margin-right: 15px;
+}
+
+.item-tabs__payment-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.item-tabs__payment-item {
+  -ms-flex-preferred-size: calc(100% / 2 - 50px);
+      flex-basis: calc(100% / 2 - 50px);
+  margin-left: 50px;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
