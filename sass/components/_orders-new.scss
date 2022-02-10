@@ -60,17 +60,18 @@
 .orders-new__content {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    margin-bottom: 43px;
 }
 .orders-new__img {
-    width: 15%;
+    width: 20%;
+    padding: 0 0 0 37px;
 
     img {
         max-width: 127px;
     }
 }
 .orders-new__content-name {
-    width: 60%;
+    width: 55%;
 
     font-weight: 400;
 font-size: 18px;
@@ -103,4 +104,9 @@ span:first-child {
 
         color: #384D54;
     }
+}
+.content_block {
+    background: #F9F9F9;
+    border-radius: 5px;
+    padding: 45px 0;
 }

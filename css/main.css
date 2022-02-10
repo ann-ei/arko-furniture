@@ -2758,11 +2758,12 @@ ul.pagination li a.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0;
+  margin-bottom: 43px;
 }
 
 .orders-new__img {
-  width: 15%;
+  width: 20%;
+  padding: 0 0 0 37px;
 }
 
 .orders-new__img img {
@@ -2770,7 +2771,7 @@ ul.pagination li a.active {
 }
 
 .orders-new__content-name {
-  width: 60%;
+  width: 55%;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
@@ -2798,6 +2799,12 @@ ul.pagination li a.active {
   font-size: 18px;
   line-height: 1.3;
   color: #384D54;
+}
+
+.content_block {
+  background: #F9F9F9;
+  border-radius: 5px;
+  padding: 45px 0;
 }
 
 .order-accepted__title {
