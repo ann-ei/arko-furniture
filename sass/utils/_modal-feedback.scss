@@ -49,6 +49,7 @@
     border-radius: 5px;
     width: 100%;
     padding: 15px;
+    
 }
 .modal-feedback__label {
     font-weight: 400;
@@ -59,6 +60,7 @@
 }
 .modal-feedback__field {
     margin-bottom: 20px;
+    position: relative;
 }
 .modal-feedback__text {
     font-weight: 400;
@@ -89,4 +91,13 @@
     position: absolute; 
     top: 20px;
     right: 30px;
+}
+.fancybox-slide--html .fancybox-close-small {
+    display: none;
+}
+#callback {
+    min-width: 584px;
+    border: 1px solid #384685;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
