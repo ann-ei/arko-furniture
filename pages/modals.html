@@ -195,9 +195,178 @@
     </button>
 </div>
 
+<a data-fancybox data-src="#details" href="javascript:;" class="modal-nav-link">
+    Details
+  </a>
+
+  <div style="display: none;" id="details">
+    <h2 class="modal-details__title">Мы свяжемся с Вами для уточнения деталей проекта.</h2>
+
+    <form action="" class="modal-feedback__form">
+
+    <div class="modal-feedback__field">
+      <label class="modal-feedback__label">
+        Имя*
+        <input type="text" class="modal-feedback__input" placeholder="Иван">
+      </label>
+    </div>
+
+    <div class="modal-feedback__field">
+      <label class="modal-feedback__label">
+        Телефон*
+        <input type="tel" class="modal-feedback__input" placeholder="+7 (000) 000 00 00">
+      </label>
+    </div>  
+
+    <div class="modal-feedback__field">
+        <label class="modal-feedback__label">
+            Комментарий
+          
+          <textarea class="modal-feedback__input" name="" id="" cols="15" rows="5" placeholder="Перезвоните мне в 17:00"></textarea>
+        </label>
+      </div> 
+
+      <p class="modal-feedback__text">* - поля, обязательные для заполнения</p>
+
+    <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+
+    </form>
+
+    <button class="modal-feedback__close" data-modal-close>
+      <svg
+        width="20"
+        height="20"
+      >
+        <use href="../img/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+</div>
+
+<a data-fancybox data-src="#review" href="javascript:;" class="modal-nav-link">
+    Review
+  </a>
+
+  <div style="display: none;" id="review">
+    <h2 class="modal__title">ДОБАВИТЬ ОТЗЫВ</h2>
+
+    <form action="" class="modal-feedback__form">
+
+    <div class="modal-feedback__field">
+      <label class="modal-feedback__label">
+        Имя*
+        <input type="text" class="modal-feedback__input" placeholder="Иван">
+      </label>
+    </div>
+
+    <div class="modal-feedback__field">
+      <label class="modal-feedback__label">
+        Ваша оценка*
+        <div class="modal-review__rating">
+            <svg width="23" height="23">
+                <use href="../img/sprite.svg#icon-star-gold"></use>
+              </svg>
+
+              <svg width="23" height="23">
+                <use href="../img/sprite.svg#icon-star-gold"></use>
+              </svg>
+
+              <svg width="23" height="23">
+                <use href="../img/sprite.svg#icon-star-gold"></use>
+              </svg>
+
+              <svg width="23" height="23">
+                <use href="../img/sprite.svg#icon-star-gold"></use>
+              </svg>
+
+              <svg width="23" height="23">
+                <use href="../img/sprite.svg#icon-star-grey"></use>
+              </svg>
+        </div>
+      </label>
+    </div>  
+
+    <div class="modal-feedback__field">
+        <label class="modal-feedback__label">
+            Комментарий
+          
+          <textarea class="modal-feedback__input" name="" id="" cols="15" rows="5" placeholder="Перезвоните мне в 17:00"></textarea>
+        </label>
+      </div> 
+
+      <div class="input__wrapper">
+        <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+        <label for="input__file" class="input__file-button">
+           <span class="input__file-icon-wrapper">
+               
+               <svg class="input__file-icon" width="24" height="20">
+                <use href="../img/sprite.svg#icon-download"></use>
+              </svg>
+            </span>
+           <span class="input__file-button-text">Загрузить фото</span>
+        </label>
+     </div>
+
+      <p class="modal-feedback__text">* - поля, обязательные для заполнения</p>
+
+    <button class="modal-feedback__btn">ДОБАВИТЬ ОТЗЫВ</button>
+
+    </form>
+
+    <button class="modal-feedback__close" data-modal-close>
+      <svg
+        width="20"
+        height="20"
+      >
+        <use href="../img/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+</div>
+
+<a data-fancybox data-src="#add-to-cart" href="javascript:;" class="modal-nav-link">
+    Add to cart
+  </a>
+
+  <div style="display: none;" id="add-to-cart">
+    <h2 class="modal__title-register-or-login">Товар добавлен в корзину!</h2>
+
+    <p class="modal-add-to-cart__text">Кухня Лондон модульная</p>
+
+    <button class="modal-add__btn--dark">ПЕРЕЙТИ В КОРЗИНУ</button>
+
+    <button class="modal-add__btn-light">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+
+    <button class="modal-feedback__close" data-modal-close>
+      <svg
+        width="20"
+        height="20"
+      >
+        <use href="../img/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+</div>
+
+<a data-fancybox data-src="#empty-cart" href="javascript:;" class="modal-nav-link">
+    Empty cart
+  </a>
+
+  <div style="display: none;" id="empty-cart">
+    <h2 class="modal__title-empty-cart">Ваша корзина пуста!</h2>
+
+
+    <button class="modal-feedback__close" data-modal-close>
+      <svg
+        width="20"
+        height="20"
+      >
+        <use href="../img/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+</div>
+
       
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+      <script src="../js/input-file.js"></script>
+    </body>
 </html>

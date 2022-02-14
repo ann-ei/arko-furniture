@@ -18,7 +18,7 @@
         text-decoration: underline;
     }
 }
-.modal-login__btn, .modal-login__btn--dark {
+.modal-login__btn {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.3;
@@ -157,4 +157,162 @@
     display: block;
     font-size: 25px;
     line-height: 2;
+}
+#details {
+    min-width: 725px;
+    border: 1px solid #384685;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+}
+.modal-details__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    
+    color: #384685;
+    margin-bottom: 25px;
+}
+#review {
+    min-width: 725px;
+    border: 1px solid #384685;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+}
+.modal-review__rating {
+    margin-top: 10px;
+}
+
+// add file
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+  }
+   
+  .input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+   
+  .input__file-icon-wrapper {
+    height: 60px;
+    width: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: 1px solid #fff;
+  }
+   
+  .input__file-button-text {
+    line-height: 1;
+    margin-top: 1px;
+  }
+   
+  .input__file-button {
+    width: 100%;
+    max-width: 212px;
+    height: 42px;
+    background: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+
+    color: #564D4D;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    cursor: pointer;
+    border: 1px solid #384685;
+border-radius: 2px;
+  }
+
+  .modal-add-to-cart__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    
+    
+    color: #000000;
+  }
+
+  #add-to-cart {
+    width: 400px;
+    border: 1px solid #384685;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+  }
+  .modal-add-to-cart__text {
+      margin-top: 33px;
+      margin-bottom: 36px;
+  }
+
+  .modal-add__btn--dark {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.3;
+
+    color: #FFFFFF;
+    background: #384685;
+    border-radius: 5px;
+    padding: 8px 0;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 21px;
+    transition: 100ms all linear;
+
+
+    &:hover {
+        background: #182560;
+    }
+}
+.modal-add__btn-light {
+font-weight: 400;
+font-size: 22px;
+line-height: 1.3;
+
+color: #384685;
+background: #fff;
+border-radius: 5px;
+padding: 6px 0;
+width: 100%;
+transition: 100ms all linear;
+outline: 1px solid #384685;
+border-radius: 5px;
+
+
+&:hover {
+    background: #384685;
+    color: #FFFFFF;
+}
+}
+#empty-cart {
+    width: 530px;
+    border: 1px solid #384685;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+}
+.modal__title-empty-cart {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.3;
+    
+    color: #000000;
 }
