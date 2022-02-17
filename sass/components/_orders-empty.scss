@@ -6,9 +6,16 @@ line-height: 1.3;
 color: #1D1818;
 
 }
+.orders-empty__section {
+    padding-bottom: 82px;
+}
 .orders-empty__text-wrap {
     width: 85%;
     padding-top: 20px;
+
+    @media screen and (max-width:1279px) {
+        width: 100%;
+          }
 
     button {
         display: block;
@@ -28,6 +35,10 @@ color: #1D1818;
 }
 .orders-empty__content {
     display: flex;
+
+    @media screen and (max-width:1279px) {
+        display: block;
+          }
 }
 .orders-empty__text {
     text-align: center;

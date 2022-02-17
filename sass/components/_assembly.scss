@@ -2,10 +2,18 @@
     background: #F8F8F8;
     border-collapse: collapse;
 box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+
+@media screen and (max-width:767px) {
+    font-size: 14px;
+      }
+      
     th {
         text-align: center;
         padding: 18px 137px;
         border: 1px solid #BDBDBD;
+        @media screen and (max-width:767px) {
+            padding: 14px 70px;
+              }
     }
     td {
         padding-top: 10px;
@@ -14,9 +22,19 @@ box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
         padding-right: 10px;
         border: 1px solid #BDBDBD;
 
+        @media screen and (max-width:767px) {
+            padding-left: 18px;
+              }
+              @media screen and (max-width:479px) {
+                padding-top: 5px;
+        padding-bottom: 5px;
+                  }
+
         &:nth-child(2) {
             text-align: center;
         }
+
+        
     }
 }
 .assembly__text {

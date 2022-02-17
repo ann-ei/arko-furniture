@@ -17,6 +17,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    @media screen and (max-width:479px) {
+        margin-bottom: 30px;
+          }
 }
 .account-exit {
     font-weight: 400;
@@ -32,10 +36,33 @@
 .account-nav {
     width: 255px;
     margin-right: 130px;
+    @media screen and (max-width:1279px) {
+        width: 100%;
+        margin-bottom: 45px;
+        border-bottom: 1px solid #E2E2E2;
+          }
+
+          @media screen and (max-width:479px) {
+            border: none;
+              }
+}
+.account-nav__list {
+    @media screen and (max-width:1279px) {
+        display: flex;
+        justify-content: space-between;
+          }
+
+          @media screen and (max-width:479px) {
+            display: block;
+              }
 }
 .account-nav__link {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:479px) {
+        justify-content: center;
+          }
 
     span {
         font-weight: 400;
@@ -63,10 +90,26 @@
     border-bottom: 1px solid #E2E2E2;
     padding-top: 24px;
     padding-bottom: 24px;
+    @media screen and (max-width:1279px) {
+        border: none;
+          }
+
+          @media screen and (max-width:479px) {
+            border-bottom: 1px solid #E2E2E2;
+            margin-bottom: 10px;
+              }
 }
 .account__content {
     display: flex;
+    @media screen and (max-width:1279px) {
+        display: block;
+          }
 
+}
+.account-form__user {
+    @media screen and (max-width:1023px) {
+        margin-bottom: 70px;
+          }
 }
 .account-form__content {
     padding-top: 24px;
@@ -95,9 +138,16 @@
     font-weight: 400;
     font-size: 18px;
     color: #564D4D;
+
+    @media screen and (max-width:479px) {
+        width: 335px;
+          }
 }
 .account-form__item {
     margin-bottom: 12px;
+    @media screen and (max-width:1439px) {
+        margin-bottom: 30px;
+          }
 }
 .account-form__btn {
     width: 357px;
@@ -109,6 +159,9 @@
     font-weight: 400;
     font-size: 18px;
     cursor: pointer;
+    @media screen and (max-width:479px) {
+        width: 335px;
+          }
 }
 .account-form__label {
 
@@ -120,9 +173,15 @@
 
 
     color: #000000;
+    @media screen and (max-width:1439px) {
+        margin-bottom: 10px;
+          }
 }
 .account-form {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:1023px) {
+        display: block;
+          }
 }
