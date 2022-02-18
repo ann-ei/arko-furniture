@@ -2887,6 +2887,18 @@ ul.pagination li a.active {
   border-bottom: 1px solid #E2E2E2;
 }
 
+@media screen and (max-width: 767px) {
+  .orders-new__table-name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .orders-new__table-name {
+    font-size: 12px;
+  }
+}
+
 .orders-new__table-number {
   width: 25%;
 }
@@ -2913,6 +2925,18 @@ ul.pagination li a.active {
   color: #1D1818;
   padding: 24px 0;
   border-bottom: 1px solid #E2E2E2;
+}
+
+@media screen and (max-width: 767px) {
+  .orders-new__table-order {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .orders-new__table-order {
+    font-size: 12px;
+  }
 }
 
 .orders-new__table-order .orders-new__table-number {
@@ -2998,6 +3022,12 @@ ul.pagination li a.active {
   color: #1D1818;
 }
 
+@media screen and (max-width: 479px) {
+  .orders-new__content-name {
+    font-size: 12px;
+  }
+}
+
 .orders-new__quantity {
   width: 25%;
   font-weight: 400;
@@ -3009,6 +3039,13 @@ ul.pagination li a.active {
 @media screen and (max-width: 1023px) {
   .orders-new__quantity {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .orders-new__quantity {
+    font-size: 12px;
+    width: 20%;
   }
 }
 
@@ -3037,6 +3074,12 @@ ul.pagination li a.active {
 @media screen and (max-width: 1023px) {
   .orders-new__content-name {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .orders-new__content-name {
+    font-size: 12px;
   }
 }
 
@@ -3457,6 +3500,7 @@ ul.pagination li a.active {
   -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  padding: 45px 30px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3468,7 +3512,6 @@ ul.pagination li a.active {
 @media screen and (max-width: 479px) {
   #callback {
     min-width: 320px;
-    padding: 30px;
   }
 }
 
@@ -4730,7 +4773,7 @@ ul.pagination li a.active {
   -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 25px;
+  padding: 45px 25px;
 }
 
 @media screen and (max-width: 1023px) {
