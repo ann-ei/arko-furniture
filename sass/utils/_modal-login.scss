@@ -215,6 +215,13 @@
     @media screen and (max-width:1023px) {
         min-width: 550px;
           }
+          @media screen and (max-width:767px) {
+            min-width: 460px;
+              }
+
+              @media screen and (max-width:479px) {
+                min-width: 320px;
+                  }
 }
 .modal-details__title {
     font-weight: 400;
@@ -230,6 +237,17 @@
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 40px;
+
+    @media screen and (max-width:1023px) {
+        min-width: 550px;
+          }
+          @media screen and (max-width:767px) {
+            min-width: 460px;
+              }
+
+              @media screen and (max-width:479px) {
+                min-width: 320px;
+                  }
 }
 .modal-review__rating {
     margin-top: 10px;
@@ -308,6 +326,17 @@ border-radius: 2px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 25px;
+
+    @media screen and (max-width:1023px) {
+        width: 370px;
+          }
+        //   @media screen and (max-width:767px) {
+        //     min-width: 460px;
+        //       }
+
+              @media screen and (max-width:479px) {
+                width: 320px;
+                  }
   }
   .modal-add-to-cart__text {
       margin-top: 33px;
@@ -327,6 +356,9 @@ border-radius: 2px;
     margin-top: 32px;
     margin-bottom: 21px;
     transition: 100ms all linear;
+    @media screen and (max-width:479px) {
+        font-size: 17px;
+          }
 
 
     &:hover {
@@ -346,6 +378,10 @@ width: 100%;
 transition: 100ms all linear;
 outline: 1px solid #384685;
 border-radius: 5px;
+
+@media screen and (max-width:479px) {
+    font-size: 17px;
+      }
 
 
 &:hover {
