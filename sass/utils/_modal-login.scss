@@ -4,6 +4,18 @@
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 36px;
+
+    @media screen and (max-width:1023px) {
+        min-width: 585px;
+          }
+
+          @media screen and (max-width:767px) {
+            min-width: 460px;
+              }
+
+              @media screen and (max-width:479px) {
+                min-width: 320px;
+                  }
 }
 .modal-login__password {
     font-weight: 400;
@@ -89,6 +101,18 @@
         box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 36px;
+
+        @media screen and (max-width:1023px) {
+            min-width: 585px;
+              }
+    
+              @media screen and (max-width:767px) {
+                min-width: 460px;
+                  }
+    
+                  @media screen and (max-width:479px) {
+                    min-width: 320px;
+                      }
     }
 .modal-register__text {
     margin-bottom: 37px;
@@ -103,7 +127,16 @@
     border: 1px solid #384685;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 40px;}
+    padding: 40px;
+
+    @media screen and (max-width:1023px) {
+        width: 430px;
+          }
+
+              @media screen and (max-width:479px) {
+                min-width: 320px;
+                  }
+}
 
 .modal-login__btn--dark {
         font-weight: 700;
@@ -123,6 +156,11 @@
         &:hover {
             background: #182560;
         }
+
+        @media screen and (max-width:767px) {
+            padding: 12px 0;
+            font-size: 20px;
+              }
     }
 .modal-login__btn-light {
     font-weight: 700;
@@ -143,6 +181,11 @@
         background: #384685;
         color: #FFFFFF;
     }
+
+    @media screen and (max-width:767px) {
+        padding: 12px 0;
+        font-size: 20px;
+          }
 }
 
 .modal__title-register-or-login {
@@ -151,6 +194,10 @@
     line-height: 1.3;
     
     color: #1D1818;
+
+    @media screen and (max-width:767px) {
+        font-size: 21px;
+          }
     }
 
 .modal-nav-link {
@@ -164,6 +211,10 @@
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 40px;
+
+    @media screen and (max-width:1023px) {
+        min-width: 550px;
+          }
 }
 .modal-details__title {
     font-weight: 400;

@@ -107,6 +107,18 @@ border-radius: 5px;
 .our-works__principles-container {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:1279px) {
+        align-items: center;
+          }
+
+          @media screen and (max-width:1023px) {
+            flex-direction: column-reverse;
+              }
+}
+.our-works__principles__content {
+    @media screen and (max-width:1023px) {
+        margin-bottom: 30px;
+          }
 }
 .our-works__principles__img {
     min-width: 705px;
@@ -114,6 +126,16 @@ border-radius: 5px;
     @media screen and (max-width:1279px) {
         min-width: 570px;
           }
+          @media screen and (max-width:1023px) {
+            margin-right: 0;
+              }
+
+              @media screen and (max-width:767px) {
+                min-width: 460px;
+                  }
+                  @media screen and (max-width:479px) {
+                    min-width: 320px;
+                      }
 }
 .our-works__principles__title {
     font-weight: 700;
