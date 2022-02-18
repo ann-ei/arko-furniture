@@ -3,10 +3,20 @@
 }
 .item-wrap {
     display: flex;
+    @media screen and (max-width:1023px) {
+        flex-direction: column;
+
+      
+          }
 }
 .item-slider {
     width: 55%;
     margin-right: 45px;
+    @media screen and (max-width:1023px) {
+        width: 100%;
+        margin-bottom: 30px;
+      
+          }
 }
 .slider-for {
     margin-bottom: 20px;
@@ -31,6 +41,9 @@
         background: #384685;
         border-radius: 5px;
         z-index: 999;
+        @media screen and (max-width:767px) {
+            height: 70px;
+        }
     }
 
     &::before {
@@ -44,6 +57,9 @@
         background: #384685;
         border-radius: 5px;
         z-index: 999;
+        @media screen and (max-width:767px) {
+            height: 70px;
+        }
     }
 }
 .slider-nav .item-slide {
@@ -52,6 +68,9 @@
     border-radius: 5px;
     overflow: hidden;
     margin: 0 4px;
+    @media screen and (max-width:767px) {
+        height: 64px;
+    }
 }
 .slider-nav .slick-arrow {
     top: 27%;
@@ -70,10 +89,30 @@
     @media screen and (max-width:1436px) {
         display: block;
           }
+          @media screen and (max-width:1023px) {
+            display: flex;
+              }
+              @media screen and (max-width:767px) {
+                margin-bottom: -15px;
+                  }
 }
 .item__rating {
     display: flex;
     align-items: center;
+    @media screen and (max-width:767px) {
+        display: none;
+          }
+}
+.item__stars {
+    svg {
+        @media screen and (max-width:767px) {
+            width: 18px;
+            height: 18px;
+              }
+    }
+}
+.item-slider .slick-slide img {
+    height: 100%;
 }
 .item__title {
     font-weight: 700;
@@ -85,6 +124,10 @@
         margin-right: 0;
         margin-bottom: 10px;
           }
+
+          @media screen and (max-width:767px) {
+            font-size: 16px;
+              }
 
 }
 .item__reviews {
@@ -100,12 +143,18 @@
     &:hover {
         text-decoration: none;
     }
+    @media screen and (max-width:767px) {
+        font-size: 12px;
+          }
 }
 .item-price {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 22px;
+    @media screen and (max-width:767px) {
+        margin-bottom: -5px;
+          }
 
     .main-popular__label {
         position: static;
@@ -120,6 +169,9 @@
         text-decoration-line: line-through;
         
         color: #999999;
+        @media screen and (max-width:767px) {
+            font-size: 12px;
+              }
     }
 }
 .item__current-price {
@@ -130,6 +182,15 @@
         line-height: 1.3;
         
         color: #1D1818;
+
+        @media screen and (max-width:1279px) {
+            font-size: 25px;
+    
+          
+              }
+              @media screen and (max-width:767px) {
+                font-size: 18px;
+                  }
         }
 }
 .item-available__wrap {
@@ -149,6 +210,9 @@
         line-height: 1.3;
 
         color: #0E9F2E;
+        @media screen and (max-width:767px) {
+            font-size: 14px;
+              }
 
     }
 }
@@ -159,6 +223,9 @@
     text-decoration-line: underline;
 
     color: #1D1818;
+    @media screen and (max-width:767px) {
+        font-size: 14px;
+          }
 
     &:hover {
         text-decoration: none;
@@ -170,6 +237,27 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 10px;
+    position: relative;
+
+    .main-popular__icon {
+        @media screen and (max-width:1279px) {
+            position: absolute;
+        top: -52px;
+        right: 65px;
+    
+          
+              }
+              @media screen and (max-width:1023px) {
+                position: relative;
+            top: 0;
+            right: 0;
+            width: 27px;
+            height: 24px;
+        
+              
+                  }
+        
+    }
 }
 .item-buy__btn {
 
@@ -184,6 +272,12 @@
     padding: 15px 0;
     width: 378px;
     margin-right: 45px;
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        width: 259px;
+    margin-right: 22px;
+    }
 
     &:hover {
         background: #182560;
@@ -204,6 +298,17 @@
     margin-right: 45px;
     border: 1px solid #384685;
     margin-bottom: 10px;
+    svg {
+        @media screen and (max-width:767px) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        width: 308px;
+        margin-right: 0;
+    }
 }
 .item-count__icon {
     margin-right: 10px;
@@ -221,7 +326,12 @@
         border: 2px solid #384685;
     }
 }
-
+.item-radio .custom-radio-btn {
+    @media screen and (max-width:767px) {
+        width: 30px;
+        height: 30px;
+    }
+}
 .custom-radio-btn {
     position: relative;
     display: inline-block;
@@ -269,6 +379,63 @@
 .item-radio {
     margin-top: 25px;
 }
+.item-characteristics {
+    overflow: hidden;
+    margin-top: 30px;
+}
+.more-link {
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+
+    color: #384685;
+    background: #F3F3F3;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+
+}
+
+.item-characteristics__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3;
+
+    color: #1D1818;
+    padding: 15px 0;
+    border-bottom: 3px solid #384685;
+}
+.item-characteristics__line {
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+
+    color: #1D1818;
+    border-bottom: 1px solid #E2E2E2;
+}
+.item-characteristics__label {
+    width: 205px;
+    display: inline-block;
+    margin-right: 10px;
+    @media screen and (max-width:1279px) {
+    width: 50%;
+}
+    
+}
+.item-characteristics__text {
+    display: inline-block;
+
+    @media screen and (max-width:1279px) {
+    width: 45%;
+    vertical-align: top;
+}
+
+    
+}
 
 //tabs
 
@@ -287,6 +454,15 @@
     color: #564D4D;
     padding-bottom: 30px;
     margin-right: 60px;
+    @media screen and (max-width:1279px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width:767px) {
+        width: 50%;
+        margin-right: 0;
+        padding: 5px;
+
+    }
 
 }
 #tabs .whiteborder {
@@ -322,7 +498,13 @@
     border-bottom: 3px solid #E2E2E2;
     position: relative;
 }
+#tabs .tab-desk {
+    @media screen and (max-width:767px) {
+        display: none;
 
+      
+          }
+}
 .item-tabs__reviews-text {
     font-weight: 400;
     font-size: 20px;
