@@ -1,0 +1,28 @@
+.pages_list_section {
+  padding: 40px 0;
+}
+.pages_list_title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 45px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+
+  color: #000000;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.pages_list li {
+  margin-bottom: 10px;
+}
+
+.pages_list a {
+  font-size: 20px;
+  color: #000;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
