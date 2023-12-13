@@ -1,1482 +1,1524 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="../css/main.min.css">
-        <title>Карточка товара</title>
-    </head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>Карточка товара</title>
+  </head>
+  <body>
     <header class="header desk-header">
+      <div class="top-header">
+        <div class="container">
+          <div class="top-header__wrap">
+            <div class="top-header__left">
+              <div class="top-header__location">
+                <svg class="top-header__icon" width="21" height="21">
+                  <use href="../img/sprite.svg#icon-geolocation"></use>
+                </svg>
 
-        <div class="top-header">
-            <div class="container">
+                <span class="top-header__text--left">Ростов</span>
 
-                <div class="top-header__wrap">
-
-                    <div class="top-header__left">
-                        <div class="top-header__location">
-                            <svg
-              class="top-header__icon"
-              width="21"
-              height="21"
-            >
-              <use href="../img/sprite.svg#icon-geolocation"></use>
-            </svg>
-
-            <span class="top-header__text--left">Ростов</span>
-
-            <svg
-              class="top-header__icon--select"
-              width="17"
-              height="17"
-            >
-              <use href="../img/sprite.svg#icon-arrow-down"></use>
-            </svg>
-                        </div>
-                        <ul class="top-header__list--left">
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Акции</a></li>
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Сборка</a></li>
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Оплата</a></li>
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Доставка</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="top-header__right">
-                        <ul class="top-header__list--right">
-                            <li class="top-header__item--right"><a href="" class="top-header__link">Наши работы</a></li>
-                            <li class="top-header__item--right"><a href="" class="top-header__link">Контакты</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="middle-header">
-            <div class="container middle-header-container">
-
-              <div class="middle-header__wrap">
-
-                <div class="header-logo">
-                    <svg
-              class="header-logo__icon"
-              width="189"
-              height="39"
-            >
-              <use href="../img/sprite.svg#icon-logo"></use>
-            </svg>
-                </div>
-
-                <div class="header-address">
-                    <p class="header-address__text">ул. Московская, 144 корп. - 1</p>
-                    <a href="" class="header-address__link">Схема проезда</a>
-                </div>
-
+                <svg class="top-header__icon--select" width="17" height="17">
+                  <use href="../img/sprite.svg#icon-arrow-down"></use>
+                </svg>
               </div>
+              <ul class="top-header__list--left">
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Акции</a>
+                </li>
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Сборка</a>
+                </li>
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Оплата</a>
+                </li>
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Доставка</a>
+                </li>
+              </ul>
+            </div>
 
-                <div class="header-search">
-                    <input type="search" placeholder="Поиск" class="header-search__field">
-                    <button type="submit" class="header-search__btn">
-                        <svg
-              class="header-search__icon"
-              width="23"
-              height="23"
-            >
-              <use href="../img/sprite.svg#icon-search"></use>
-            </svg>
-                    </button>
-                </div>
+            <div class="top-header__right">
+              <ul class="top-header__list--right">
+                <li class="top-header__item--right">
+                  <a href="" class="top-header__link">Наши работы</a>
+                </li>
+                <li class="top-header__item--right">
+                  <a href="" class="top-header__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="header-phone">
-                    
-                    <div class="header-phone__wrap">
-                        <svg
-              class="header-phone__icon"
-              width="19"
-              height="19"
-            >
-              <use href="../img/sprite.svg#icon-phone"></use>
-                    </svg>
+      <div class="middle-header">
+        <div class="container middle-header-container">
+          <div class="middle-header__wrap">
+            <div class="header-logo">
+              <svg class="header-logo__icon" width="189" height="39">
+                <use href="../img/sprite.svg#icon-logo"></use>
+              </svg>
+            </div>
 
-                        <a href="tel:+89615259191" class="header-phone__link">8 (961) 525 91 91</a>
-                    </div>
+            <div class="header-address">
+              <p class="header-address__text">ул. Московская, 144 корп. - 1</p>
+              <a href="" class="header-address__link">Схема проезда</a>
+            </div>
+          </div>
 
-                    <button class="header-phone__btn" type="button" data-modal-open>Заказать звонок</button>
-                
-                </div>
+          <div class="header-search">
+            <input
+              type="search"
+              placeholder="Поиск"
+              class="header-search__field"
+            />
+            <button type="submit" class="header-search__btn">
+              <svg class="header-search__icon" width="23" height="23">
+                <use href="../img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
 
-                <div class="header-user">
+          <div class="header-phone">
+            <div class="header-phone__wrap">
+              <svg class="header-phone__icon" width="19" height="19">
+                <use href="../img/sprite.svg#icon-phone"></use>
+              </svg>
 
-                    <div class="header-sign-in">
-                      <a class="header-user__link-icon" href="#">
-                        <svg
-              class="header-user__icon"
-              width="24"
-              height="24"
-            >
-              <use href="../img/sprite.svg#icon-user"></use>
-            </svg>
-          </a>
+              <a href="tel:+89615259191" class="header-phone__link"
+                >8 (961) 525 91 91</a
+              >
+            </div>
+
+            <button class="header-phone__btn" type="button" data-modal-open>
+              Заказать звонок
+            </button>
+          </div>
+
+          <div class="header-user">
+            <div class="header-sign-in">
+              <a class="header-user__link-icon" href="#">
+                <svg class="header-user__icon" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
               <a class="header-user__link" href="#">Войти</a>
-                    </div>
+            </div>
 
-                    <div class="header-favorites">
-                      <a class="header-user__link-icon" href="#">
-                      <div class="header-favorites__img-wrap">
-                        
-                        <svg
-              class="header-favorites__icon"
-              width="24"
-              height="24"
-            >
-              <use href="../img/sprite.svg#icon-like"></use>
-            </svg>
-<div class="header-favorites__img">
-            <img src="../img/red.png" alt="" width="36">
+            <div class="header-favorites">
+              <a class="header-user__link-icon" href="#">
+                <div class="header-favorites__img-wrap">
+                  <svg class="header-favorites__icon" width="24" height="24">
+                    <use href="../img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <div class="header-favorites__img">
+                    <img src="../img/red.png" alt="" width="36" />
 
-            <span>2</span>
-          </div>
-          </div>
-        </a>
-              <a class="header-user__link" href="#">Избранное</a>
-                    </div>
-
-                    <div class="header-shopping-cart">
-                      <a class="header-user__link-icon" href="#">
-                        <svg
-              class="header-user__icon"
-              width="24"
-              height="24"
-            >
-              <use href="../img/sprite.svg#icon-cart"></use>
-            </svg>
-          </a>
-              <a class="header-user__link" href="#">Корзина</a>
-                    </div>
-
+                    <span>2</span>
+                  </div>
                 </div>
-
+              </a>
+              <a class="header-user__link" href="#">Избранное</a>
             </div>
-        </div>
 
-        <div class="bottom-header">
-            <div class="container">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a href="" class="nav-list__link">КУХНИ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ГОСТИННЫЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">СПАЛЬНИ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ПРИХОЖИЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ШКАФЫ-КУПЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ДЕТСКИЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ДИВАНЫ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ГДЕ ПОСМОТРЕТЬ</a></li>
-                    </ul>
-                </nav>
+            <div class="header-shopping-cart">
+              <a class="header-user__link-icon" href="#">
+                <svg class="header-user__icon" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+              <a class="header-user__link" href="#">Корзина</a>
             </div>
+          </div>
         </div>
+      </div>
 
-
+      <div class="bottom-header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">КУХНИ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ГОСТИННЫЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">СПАЛЬНИ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ПРИХОЖИЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ШКАФЫ-КУПЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ДЕТСКИЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ДИВАНЫ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ГДЕ ПОСМОТРЕТЬ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <header class="mob-header">
       <div class="top-header--mob">
         <div class="container top-header--mob-container">
-
           <div class="top-header__location">
-            <svg
-class="top-header__icon"
-width="21"
-height="21"
->
-<use href="../img/sprite.svg#icon-geolocation"></use>
-</svg>
+            <svg class="top-header__icon" width="21" height="21">
+              <use href="../img/sprite.svg#icon-geolocation"></use>
+            </svg>
 
-<span class="top-header__text--left">Ростов</span>
+            <span class="top-header__text--left">Ростов</span>
+          </div>
 
+          <p class="header-address--mob">ул. Московская, 144 корп. - 1</p>
 
-        </div>
-
-        <p class="header-address--mob">ул. Московская, 144 корп. - 1</p>
-
-        <svg
-class="top-header__icon--select"
-width="17"
-height="17"
->
-<use href="../img/sprite.svg#icon-arrow-down"></use>
-</svg>
-
+          <svg class="top-header__icon--select" width="17" height="17">
+            <use href="../img/sprite.svg#icon-arrow-down"></use>
+          </svg>
         </div>
       </div>
 
       <div class="bottom-header--mob">
         <div class="container bottom-header--mob-container">
-          <button class="bottom-header--mob-btn">
-          <svg
-width="25"
-height="20"
->
-<use href="../img/sprite.svg#icon-menu"></use>
-</svg>
-</button>  
+          <button
+            class="bottom-header--mob-btn menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="25" height="20">
+              <use href="../img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
 
-<div class="header-logo">
-  <svg
-width="189"
-height="39"
->
-<use href="../img/sprite.svg#icon-logo"></use>
-</svg>
+          <div class="header-logo">
+            <svg width="189" height="39">
+              <use href="../img/sprite.svg#icon-logo"></use>
+            </svg>
+          </div>
 
-</div>
+          <a href="#" class="bottom-header--mob__link">
+            <svg width="16" height="17">
+              <use href="../img/sprite.svg#icon-map"></use>
+            </svg>
+            <span>Где посмотреть</span>
+          </a>
 
-<a href="#" class="bottom-header--mob__link">
-  <svg
-width="16"
-height="17"
->
-<use href="../img/sprite.svg#icon-map"></use>
-</svg>
-  <span>Где посмотреть</span>
-</a>
+          <a href="" class="bottom-header--mob__link-user">
+            <svg class="bottom-header--mob__icon-user" width="20" height="20">
+              <use href="../img/sprite.svg#icon-search-mob"></use>
+            </svg>
+          </a>
 
-<a href="" class="bottom-header--mob__link-user">
-  
-  <svg
-  class="bottom-header--mob__icon-user"
-  width="20"
-  height="20"
-  >
-  <use href="../img/sprite.svg#icon-search-mob"></use>
-  </svg>
+          <a href="" class="bottom-header--mob__link-user">
+            <svg class="bottom-header--mob__icon-user" width="20" height="20">
+              <use href="../img/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
 
-</a>
-
-<a href="" class="bottom-header--mob__link-user">
-
-  <svg
-  class="bottom-header--mob__icon-user"
-width="20"
-height="20"
->
-<use href="../img/sprite.svg#icon-phone"></use>
-</svg>
-
-</a>
-
-<a href="" class="bottom-header--mob__link-user">
-
-  <svg
-  class="bottom-header--mob__icon-user"
-width="20"
-height="20"
->
-<use href="../img/sprite.svg#icon-cart"></use>
-</svg>
-
-</a>
-
+          <a href="" class="bottom-header--mob__link-user">
+            <svg class="bottom-header--mob__icon-user" width="20" height="20">
+              <use href="../img/sprite.svg#icon-cart"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </header>
 
     <main>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <!-- <svg width="40" height="40">
+            <use
+              class="menu__icon--menu js-close-menu"
+              href="../img/icons8-close.svg"
+            ></use>
+          </svg> -->
+          <img
+            src="../img/icons8-close-30.svg"
+            alt=""
+            class="menu__icon--menu js-close-menu"
+            width="30"
+            height="30"
+          />
+        </button>
+
+        <ul class="nav-list--mob">
+          <li class="nav-item--mob"><a href="">КУХНИ</a></li>
+          <li class="nav-item--mob"><a href="">ГОСТИННЫЕ</a></li>
+          <li class="nav-item--mob"><a href="">СПАЛЬНИ</a></li>
+          <li class="nav-item--mob"><a href="">ПРИХОЖИЕ</a></li>
+          <li class="nav-item--mob"><a href="">ШКАФЫ-КУПЕ</a></li>
+          <li class="nav-item--mob"><a href="">ДЕТСКИЕ</a></li>
+          <li class="nav-item--mob"><a href="">ДИВАНЫ</a></li>
+          <li class="nav-item--mob"><a href="">ГДЕ ПОСМОТРЕТЬ</a></li>
+        </ul>
+      </div>
       <section class="item">
         <div class="container">
-
           <div class="breadcrumps">
             <a href="#">Главная</a> > <span>Оформление заказа</span>
-        </div>
+          </div>
 
           <div class="item-wrap">
-
-          <div class="item-slider">
-            <div class="slider-for">
-
-              <div class="item-slide">
-              <img src="../img/item/item-1.jpg" alt="">
-            </div>
-
-            <div class="item-slide">
-              <img src="../img/item/item-2.jpg" alt="">
-            </div>
-
-            <div class="item-slide">
-              <img src="../img/item/item-3.jpg" alt="">
-            </div>
-
-            <div class="item-slide">
-              <img src="../img/item/item-4.jpg" alt="">
-            </div>
-
-            </div>
-
-            <div class="slider-nav">
-              <div class="item-slide">
-              <img src="../img/item/item-1.jpg" alt="">
-            </div>
-
-              <div class="item-slide">
-              <img src="../img/item/item-2.jpg" alt="">
-            </div>
-
-             <div class="item-slide">
-              <img src="../img/item/item-3.jpg" alt="">
-            </div>
-
-              <div class="item-slide">
-              <img src="../img/item/item-4.jpg" alt="">
-            </div>
-
-            </div>
-          </div>
-
-          <div class="item-content">
-
-            <div class="item-title__wrap">
-
-              <h1 class="item__title">Модульная кухня Ройс</h1>
-
-              <div class="item__rating">
-
-                <div class="item__stars">
-                  <svg width="23" height="23">
-                    <use href="../img/sprite.svg#icon-star-gold"></use>
-                  </svg>
-
-                  <svg width="23" height="23">
-                    <use href="../img/sprite.svg#icon-star-gold"></use>
-                  </svg>
-
-                  <svg width="23" height="23">
-                    <use href="../img/sprite.svg#icon-star-gold"></use>
-                  </svg>
-
-                  <svg width="23" height="23">
-                    <use href="../img/sprite.svg#icon-star-gold"></use>
-                  </svg>
-
-                  <svg width="23" height="23">
-                    <use href="../img/sprite.svg#icon-star-grey"></use>
-                  </svg>
+            <div class="item-slider">
+              <div class="slider-for">
+                <div class="item-slide">
+                  <img src="../img/item/item-1.jpg" alt="" />
                 </div>
 
-                <div class="item__reviews">
-                  <a href="#" class="item__reviews-link">5 отзывов</a>
+                <div class="item-slide">
+                  <img src="../img/item/item-2.jpg" alt="" />
                 </div>
 
+                <div class="item-slide">
+                  <img src="../img/item/item-3.jpg" alt="" />
+                </div>
+
+                <div class="item-slide">
+                  <img src="../img/item/item-4.jpg" alt="" />
+                </div>
               </div>
 
-            </div>
+              <div class="slider-nav">
+                <div class="item-slide">
+                  <img src="../img/item/item-1.jpg" alt="" />
+                </div>
 
-            <div class="item-price">
-              <div class="item__old-price"><span>18 700 руб.</span></div>
-              <div class="item__current-price"><span>13 100 руб. м/п</span></div>
+                <div class="item-slide">
+                  <img src="../img/item/item-2.jpg" alt="" />
+                </div>
 
-              <span class="main-popular__label label-discount">-30%</span>
-            </div>
+                <div class="item-slide">
+                  <img src="../img/item/item-3.jpg" alt="" />
+                </div>
 
-            <div class="item-available__wrap">
-              <div class="item-available">
-                <span class="item-available__text">В наличии</span>
-              </div>
-              <div class="item-installment">
-                <a href="#" class="item-installment__link">Рассрочка 0-0-6</a>
-              </div>
-            </div>
-
-            <div class="item-buy">
-              <button class="item-buy__btn">КУПИТЬ</button>
-              <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-            </div>
-
-            <div class="item-count">
-
-            <button class="item-count__btn">СДЕЛАТЬ ПРОЕКТ И ПРОСЧЕТ</button>
-            <button class="item-count__btn">
-              <svg width="26" height="26" class="item-count__icon">
-                <use href="../img/sprite.svg#icon-geolocation"></use>
-              </svg>
-              ГДЕ ПОСМОТРЕТЬ</button>
-
-            </div>
-
-            <div class="item-radio">
-
-              <span class="item-radio__text">Цвета фасадов:</span>
-
-              <div class="item-radio__group">
-
-                <label for="radio-1">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-1">
-
-                  <span class="custom-radio-btn" id="radio-1-span"></span>
-                </label>
-
-                <label for="radio-2">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-2">
-
-                  <span class="custom-radio-btn" id="radio-2-span"></span>
-                </label>
-
-                <label for="radio-3">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-3">
-
-                  <span class="custom-radio-btn" id="radio-3-span"></span>
-                </label>
-
-                <label for="radio-4">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-4">
-
-                  <span class="custom-radio-btn" id="radio-4-span"></span>
-                </label>
-
-                <label for="radio-5">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-5">
-
-                  <span class="custom-radio-btn" id="radio-5-span"></span>
-                </label>
-
-                <label for="radio-6">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-6">
-
-                  <span class="custom-radio-btn" id="radio-6-span"></span>
-                </label>
-
-                <label for="radio-7">
-                  <input type="radio" name="color" class="real-radio-btn" id="radio-7">
-
-                  <span class="custom-radio-btn" id="radio-7-span"></span>
-                </label>
-
-              </div>
-
-              <div class="item-radio__group">
-              </div>
-
-              
-
-            </div>
-
-            <div class="item-characteristics">
-              <h3 class="item-characteristics__title">ХАРАКТЕРИСТИКИ</h3>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Высота нижних шкафов:</label>
-                <p class="item-characteristics__text">858 мм - до верха столешницы</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Высота верхних шкафов:</label>
-                <p class="item-characteristics__text">700 мм</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Глубина нижних шкафов:</label>
-                <p class="item-characteristics__text">500 мм корпус (по столешнице 600 мм)</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Глубина верхних шкафов:</label>
-                <p class="item-characteristics__text">300 мм</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Материал фасада:</label>
-                <p class="item-characteristics__text">МДФ пленка ПВХ</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Материал корпуса:</label>
-                <p class="item-characteristics__text">Серый ЛДСП</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Направляющие:</label>
-                <p class="item-characteristics__text">Роликовые</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Столешница:</label>
-                <p class="item-characteristics__text">Выбирается отдельно (в стоимость не входит)</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Стекло:</label>
-                <p class="item-characteristics__text">4 мм матовое</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Фурнитура:</label>
-                <p class="item-characteristics__text">Петли и направляющие в комплекте</p>
-              </div>
-
-              <div class="item-characteristics__line">
-                <label for="" class="item-characteristics__label">Ручки:</label>
-                <p class="item-characteristics__text">В комплект не входят</p>
+                <div class="item-slide">
+                  <img src="../img/item/item-4.jpg" alt="" />
+                </div>
               </div>
             </div>
 
+            <div class="item-content">
+              <div class="item-title__wrap">
+                <h1 class="item__title">Модульная кухня Ройс</h1>
+
+                <div class="item__rating">
+                  <div class="item__stars">
+                    <svg width="23" height="23">
+                      <use href="../img/sprite.svg#icon-star-gold"></use>
+                    </svg>
+
+                    <svg width="23" height="23">
+                      <use href="../img/sprite.svg#icon-star-gold"></use>
+                    </svg>
+
+                    <svg width="23" height="23">
+                      <use href="../img/sprite.svg#icon-star-gold"></use>
+                    </svg>
+
+                    <svg width="23" height="23">
+                      <use href="../img/sprite.svg#icon-star-gold"></use>
+                    </svg>
+
+                    <svg width="23" height="23">
+                      <use href="../img/sprite.svg#icon-star-grey"></use>
+                    </svg>
+                  </div>
+
+                  <div class="item__reviews">
+                    <a href="#" class="item__reviews-link">5 отзывов</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item-price">
+                <div class="item__old-price"><span>18 700 руб.</span></div>
+                <div class="item__current-price">
+                  <span>13 100 руб. м/п</span>
+                </div>
+
+                <span class="main-popular__label label-discount">-30%</span>
+              </div>
+
+              <div class="item-available__wrap">
+                <div class="item-available">
+                  <span class="item-available__text">В наличии</span>
+                </div>
+                <div class="item-installment">
+                  <a href="#" class="item-installment__link">Рассрочка 0-0-6</a>
+                </div>
+              </div>
+
+              <div class="item-buy">
+                <button class="item-buy__btn">КУПИТЬ</button>
+                <a href="#" class="main-popular__icon"> </a>
+              </div>
+
+              <div class="item-count">
+                <button class="item-count__btn">
+                  СДЕЛАТЬ ПРОЕКТ И ПРОСЧЕТ
+                </button>
+                <button class="item-count__btn">
+                  <svg width="26" height="26" class="item-count__icon">
+                    <use href="../img/sprite.svg#icon-geolocation"></use>
+                  </svg>
+                  ГДЕ ПОСМОТРЕТЬ
+                </button>
+              </div>
+
+              <div class="item-radio">
+                <span class="item-radio__text">Цвета фасадов:</span>
+
+                <div class="item-radio__group">
+                  <label for="radio-1">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-1"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-1-span"></span>
+                  </label>
+
+                  <label for="radio-2">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-2"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-2-span"></span>
+                  </label>
+
+                  <label for="radio-3">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-3"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-3-span"></span>
+                  </label>
+
+                  <label for="radio-4">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-4"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-4-span"></span>
+                  </label>
+
+                  <label for="radio-5">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-5"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-5-span"></span>
+                  </label>
+
+                  <label for="radio-6">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-6"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-6-span"></span>
+                  </label>
+
+                  <label for="radio-7">
+                    <input
+                      type="radio"
+                      name="color"
+                      class="real-radio-btn"
+                      id="radio-7"
+                    />
+
+                    <span class="custom-radio-btn" id="radio-7-span"></span>
+                  </label>
+                </div>
+
+                <div class="item-radio__group"></div>
+              </div>
+
+              <div class="item-characteristics">
+                <h3 class="item-characteristics__title">ХАРАКТЕРИСТИКИ</h3>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Высота нижних шкафов:</label
+                  >
+                  <p class="item-characteristics__text">
+                    858 мм - до верха столешницы
+                  </p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Высота верхних шкафов:</label
+                  >
+                  <p class="item-characteristics__text">700 мм</p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Глубина нижних шкафов:</label
+                  >
+                  <p class="item-characteristics__text">
+                    500 мм корпус (по столешнице 600 мм)
+                  </p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Глубина верхних шкафов:</label
+                  >
+                  <p class="item-characteristics__text">300 мм</p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Материал фасада:</label
+                  >
+                  <p class="item-characteristics__text">МДФ пленка ПВХ</p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Материал корпуса:</label
+                  >
+                  <p class="item-characteristics__text">Серый ЛДСП</p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Направляющие:</label
+                  >
+                  <p class="item-characteristics__text">Роликовые</p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Столешница:</label
+                  >
+                  <p class="item-characteristics__text">
+                    Выбирается отдельно (в стоимость не входит)
+                  </p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Стекло:</label
+                  >
+                  <p class="item-characteristics__text">4 мм матовое</p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Фурнитура:</label
+                  >
+                  <p class="item-characteristics__text">
+                    Петли и направляющие в комплекте
+                  </p>
+                </div>
+
+                <div class="item-characteristics__line">
+                  <label for="" class="item-characteristics__label"
+                    >Ручки:</label
+                  >
+                  <p class="item-characteristics__text">В комплект не входят</p>
+                </div>
+              </div>
+            </div>
           </div>
-
-        </div>
-
         </div>
       </section>
 
-       <section class="item-tabs">
-         <div class="container">
-
+      <section class="item-tabs">
+        <div class="container">
           <div id="tabs">
             <div class="tabs__wrap">
-            <div class="tab whiteborder">ДОСТУПНЫЕ МОДУЛИ</div>
-            <div class="tab">ВАРИАНТЫ СТОЛЕШНИЦ</div>
-            <div class="tab tab-desk">ОТЗЫВЫ</div>
-            <div class="tab tab-desk">ОПИСАНИЕ</div>
-            <div class="tab tab-desk">ДОСТАВКА И ОПЛАТА</div>
-          </div>
-
-            <div class="tabContent">
-              <ul class="main-popular__list">
-
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                    <button class="main-popular__btn">КУПИТЬ</button>
-    
-                    <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-    
-                  </div>
-    
-                  <div class="main-popular__sizes">
-                    <span>Размеры:</span>
-                    <span>Ширина <br>
-                      1635 мм
-                      </span>
-                    <span>Высота <br>
-                      650 мм</span>
-                    <span>Глубина <br>
-                      2032 мм</span>
-                  </div>
-    
-                  
-                  </a>
-                </li>
-    
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-heet">ХИТ</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-    
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-    
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-                
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-    
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-    
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-    
-                <li class="main-popular__item">
-                  <span class="main-popular__label label-discount">-30%</span>
-                  <a href="" class="main-popular__link">
-                    <div class="main-popular__img">
-                      <img src="../img/item/tabs-1.jpg" alt="">
-                    </div>
-    
-                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
-    
-                    <div class="main-popular__squares">
-                      <button type="button"></button>
-                      <button type="button"></button>
-                      <button type="button"></button>
-                    </div>
-    
-                    <div class="main-popular__price">
-                      <p class="main-popular__old-price">7 159 руб.</p>
-                      <p class="main-popular__current-price">5 017 руб.</p>
-                    </div>
-    
-                    <div class="main-popular__sizes--mob">
-                      <span>Ш*Г*В:</span>
-                      <span>600*320*110 мм</span>
-                    </div>
-    
-                    <div class="main-popular__buy">
-    
-                      <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
-                    </div>
-    
-                    <div class="main-popular__sizes">
-                      <span>Размеры:</span>
-                      <span>Ширина <br>
-                        1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
-                    </div>
-                  </a>
-                </li>
-    
-              </ul>
-    
+              <div class="tab whiteborder">ДОСТУПНЫЕ МОДУЛИ</div>
+              <div class="tab">ВАРИАНТЫ СТОЛЕШНИЦ</div>
+              <div class="tab tab-desk">ОТЗЫВЫ</div>
+              <div class="tab tab-desk">ОПИСАНИЕ</div>
+              <div class="tab tab-desk">ДОСТАВКА И ОПЛАТА</div>
             </div>
 
             <div class="tabContent">
               <ul class="main-popular__list">
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-heet">ХИТ</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
 
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
-                    <button class="main-popular__btn">КУПИТЬ</button>
-    
-                    <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-    
-                  </div>
-    
-                  <div class="main-popular__sizes">
-                    <span>Размеры:</span>
-                    <span>Ширина <br>
-                      1635 мм
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
                       </span>
-                    <span>Высота <br>
-                      650 мм</span>
-                    <span>Глубина <br>
-                      2032 мм</span>
-                  </div>
-    
-                  
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
                   </a>
                 </li>
-    
+
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-1.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">Ройс шкаф верхний</h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabContent">
+              <ul class="main-popular__list">
+                <li class="main-popular__item">
+                  <span class="main-popular__label label-discount">-30%</span>
+                  <a href="" class="main-popular__link">
+                    <div class="main-popular__img">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
+                    </div>
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
+                    <div class="main-popular__squares">
+                      <button type="button"></button>
+                      <button type="button"></button>
+                      <button type="button"></button>
+                    </div>
+
+                    <div class="main-popular__price">
+                      <p class="main-popular__old-price">7 159 руб.</p>
+                      <p class="main-popular__current-price">5 017 руб.</p>
+                    </div>
+
+                    <div class="main-popular__sizes--mob">
+                      <span>Ш*Г*В:</span>
+                      <span>600*320*110 мм</span>
+                    </div>
+
+                    <div class="main-popular__buy">
+                      <button class="main-popular__btn">КУПИТЬ</button>
+
+                      <a href="#" class="main-popular__icon"> </a>
+                    </div>
+
+                    <div class="main-popular__sizes">
+                      <span>Размеры:</span>
+                      <span
+                        >Ширина <br />
+                        1635 мм
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-heet">ХИТ</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-    
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-    
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-                
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-    
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-    
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-    
+
                 <li class="main-popular__item">
                   <span class="main-popular__label label-discount">-30%</span>
                   <a href="" class="main-popular__link">
                     <div class="main-popular__img">
-                      <img src="../img/item/tabs-2.jpg" alt="">
+                      <img src="../img/item/tabs-2.jpg" alt="" />
                     </div>
-    
-                    <h3 class="main-popular__title">Столешница ПФ 38 мм 2-ой категории в размер</h3>
-    
+
+                    <h3 class="main-popular__title">
+                      Столешница ПФ 38 мм 2-ой категории в размер
+                    </h3>
+
                     <div class="main-popular__squares">
                       <button type="button"></button>
                       <button type="button"></button>
                       <button type="button"></button>
                     </div>
-    
+
                     <div class="main-popular__price">
                       <p class="main-popular__old-price">7 159 руб.</p>
                       <p class="main-popular__current-price">5 017 руб.</p>
                     </div>
-    
+
                     <div class="main-popular__sizes--mob">
                       <span>Ш*Г*В:</span>
                       <span>600*320*110 мм</span>
                     </div>
-    
+
                     <div class="main-popular__buy">
-    
                       <button class="main-popular__btn">КУПИТЬ</button>
-      
-                      <a
-                    href="#"
-                  class="main-popular__icon"
-                >
-                    </a>
-      
+
+                      <a href="#" class="main-popular__icon"> </a>
                     </div>
-    
+
                     <div class="main-popular__sizes">
                       <span>Размеры:</span>
-                      <span>Ширина <br>
+                      <span
+                        >Ширина <br />
                         1635 мм
-                        </span>
-                      <span>Высота <br>
-                        650 мм</span>
-                      <span>Глубина <br>
-                        2032 мм</span>
+                      </span>
+                      <span
+                        >Высота <br />
+                        650 мм</span
+                      >
+                      <span
+                        >Глубина <br />
+                        2032 мм</span
+                      >
                     </div>
                   </a>
                 </li>
-    
               </ul>
-    
             </div>
 
             <div class="tabContent tabContent-reviewes">
-              <p class="item-tabs__reviews-text">К сожалению, пока никто не оставил отзыв для данного товара, будьте первым!</p>
+              <p class="item-tabs__reviews-text">
+                К сожалению, пока никто не оставил отзыв для данного товара,
+                будьте первым!
+              </p>
               <button class="item-tabs__reviews-btn">ОСТАВИТЬ ОТЗЫВ</button>
             </div>
 
             <div class="tabContent tabContent-descr">
-              <p class="item-tabs-descr">Кухня Ройс – модель, которая позволит владельцу обустроить пространство с пользой и со вкусом. Модули легко менять местами, добавлять и убирать лишние. Широкий выбор цветов фасада – дополнительный плюс для покупателя.
+              <p class="item-tabs-descr">
+                Кухня Ройс – модель, которая позволит владельцу обустроить
+                пространство с пользой и со вкусом. Модули легко менять местами,
+                добавлять и убирать лишние. Широкий выбор цветов фасада –
+                дополнительный плюс для покупателя.
               </p>
 
-              <p class="item-tabs-descr">Фасад кухни выполнен из практичной МДФ, обтянутой ламинирующей пленкой для защиты от влаги. Корпус – из ламинированной ДСП. Материалы экологически чистые, не впитывают влагу, служат долго и просты в уходе. Все выдвижные элементы оснащены качественными роликовыми направляющими – движутся плавно и тихо.
+              <p class="item-tabs-descr">
+                Фасад кухни выполнен из практичной МДФ, обтянутой ламинирующей
+                пленкой для защиты от влаги. Корпус – из ламинированной ДСП.
+                Материалы экологически чистые, не впитывают влагу, служат долго
+                и просты в уходе. Все выдвижные элементы оснащены качественными
+                роликовыми направляющими – движутся плавно и тихо.
               </p>
 
-              <p class="item-tabs-descr">Модель отличает большая глубина шкафов: верхних – 308 мм, нижних – 500 мм. Универсальная кухня Ройс впишется в интерьер любого стиля: от классики до хай-тек.   
+              <p class="item-tabs-descr">
+                Модель отличает большая глубина шкафов: верхних – 308 мм, нижних
+                – 500 мм. Универсальная кухня Ройс впишется в интерьер любого
+                стиля: от классики до хай-тек.
               </p>
             </div>
 
             <div class="tabContent">
               <div class="tabContent-delivery">
-              <div class="item-tabs__delivery">
-                <h3 class="item-tabs__title">Доставка</h3>
+                <div class="item-tabs__delivery">
+                  <h3 class="item-tabs__title">Доставка</h3>
 
-                <table class="item-tabs__table">
-                  <tr>
-                    <th>УСЛУГА</th>
-                    <th>СТОИМОСТЬ</th>
-                  </tr>
+                  <table class="item-tabs__table">
+                    <tr>
+                      <th>УСЛУГА</th>
+                      <th>СТОИМОСТЬ</th>
+                    </tr>
 
-                  <tr>
-                    <td>Доставка по городу до подъезда</td>
-                    <td>800 руб</td>
-                  </tr>
+                    <tr>
+                      <td>Доставка по городу до подъезда</td>
+                      <td>800 руб</td>
+                    </tr>
 
-                  <tr>
-                    <td>Доставка по городу с подъемом</td>
-                    <td>1200 руб</td>
-                  </tr>
+                    <tr>
+                      <td>Доставка по городу с подъемом</td>
+                      <td>1200 руб</td>
+                    </tr>
 
-                  <tr>
-                    <td>Доставка за город</td>
-                    <td>40 руб/км</td>
-                  </tr>
+                    <tr>
+                      <td>Доставка за город</td>
+                      <td>40 руб/км</td>
+                    </tr>
 
-                  <tr>
-                    <td>Поэтажный подъем столешницы 3 метра
-                      (в лифт не входит)</td>
-                    <td>150 руб/этаж</td>
-                  </tr>
+                    <tr>
+                      <td>
+                        Поэтажный подъем столешницы 3 метра (в лифт не входит)
+                      </td>
+                      <td>150 руб/этаж</td>
+                    </tr>
 
-                  <tr>
-                    <td>Поэтажный подъем всего заказа</td>
-                    <td>Уточняйте стоимость у продавца</td>
-                  </tr>
+                    <tr>
+                      <td>Поэтажный подъем всего заказа</td>
+                      <td>Уточняйте стоимость у продавца</td>
+                    </tr>
+                  </table>
+                </div>
 
-                </table>
-              </div>
+                <div class="item-tabs__payment">
+                  <h3 class="item-tabs__title">Способы оплаты</h3>
 
-              <div class="item-tabs__payment">
-                <h3 class="item-tabs__title">Способы оплаты</h3>
+                  <p class="item-tabs__payment-text">
+                    При заказе мебели предоплата составляет 30% от общей суммы
+                    по договору, остаток оплачивается при получении.
+                  </p>
 
-                <p class="item-tabs__payment-text">При заказе мебели предоплата составляет 30% от общей суммы по договору, остаток оплачивается при получении.</p>
+                  <ul class="item-tabs__payment-list">
+                    <li class="item-tabs__payment-item">
+                      <svg width="50" height="50">
+                        <use href="../img/sprite.svg#icon-pay-card"></use>
+                      </svg>
+                      <p class="item-tabs__paymentitem-text">
+                        Картой Visa/MasterCard
+                      </p>
+                    </li>
 
-                <ul class="item-tabs__payment-list">
+                    <li class="item-tabs__payment-item">
+                      <svg width="50" height="50">
+                        <use href="../img/sprite.svg#icon-pay-cash"></use>
+                      </svg>
+                      <p class="item-tabs__paymentitem-text">
+                        Оплата наличными
+                      </p>
+                    </li>
 
-                  <li class="item-tabs__payment-item">
-                    <svg width="50" height="50">
-                      <use href="../img/sprite.svg#icon-pay-card"></use>
-                    </svg>
-                    <p class="item-tabs__paymentitem-text">Картой Visa/MasterCard </p>
-                  </li>
+                    <li class="item-tabs__payment-item">
+                      <svg width="50" height="50">
+                        <use href="../img/sprite.svg#icon-pay-banking"></use>
+                      </svg>
+                      <p class="item-tabs__paymentitem-text">
+                        Оплата через банк онлайн
+                      </p>
+                    </li>
 
-                  <li class="item-tabs__payment-item">
-                    <svg width="50" height="50">
-                      <use href="../img/sprite.svg#icon-pay-cash"></use>
-                    </svg>
-                    <p class="item-tabs__paymentitem-text">Оплата наличными</p>
-                  </li>
-
-                  <li class="item-tabs__payment-item">
-                    <svg width="50" height="50">
-                      <use href="../img/sprite.svg#icon-pay-banking"></use>
-                    </svg>
-                    <p class="item-tabs__paymentitem-text">Оплата через банк онлайн</p>
-                  </li>
-
-                  <li class="item-tabs__payment-item">
-                    <svg width="50" height="50">
-                      <use href="../img/sprite.svg#icon-free-icon-payment-day-1094770-2"></use>
-                    </svg>
-                    <p class="item-tabs__paymentitem-text">Рассрочка 0-0-6</p>
-                  </li>
-
-                </ul>
+                    <li class="item-tabs__payment-item">
+                      <svg width="50" height="50">
+                        <use
+                          href="../img/sprite.svg#icon-free-icon-payment-day-1094770-2"
+                        ></use>
+                      </svg>
+                      <p class="item-tabs__paymentitem-text">Рассрочка 0-0-6</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            </div>
-
+          </div>
         </div>
-         </div>
-       </section>
+      </section>
 
-       <section class="main-sale">
+      <section class="main-sale">
         <div class="container">
-          <h2 class="section__title main-sale__title">ВОЗМОЖНО ВАС ЗАИНТЕРЕСУЕТ</h2>
+          <h2 class="section__title main-sale__title">
+            ВОЗМОЖНО ВАС ЗАИНТЕРЕСУЕТ
+          </h2>
 
           <ul class="main-popular__list slider">
-            
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1498,23 +1540,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
 
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1536,23 +1572,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
 
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1574,23 +1604,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
 
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1611,23 +1635,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
 
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1649,23 +1667,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
 
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1686,24 +1698,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
-
 
             <li class="main-popular__item">
               <a href="" class="main-popular__link">
                 <div class="main-popular__img">
-                  <img src="../img/popular-3.jpg" alt="">
+                  <img src="../img/popular-3.jpg" alt="" />
                 </div>
 
                 <h3 class="main-popular__title">Мори кровать КРМ 900.1</h3>
@@ -1725,21 +1730,17 @@ height="20"
                 </div>
 
                 <div class="main-popular__buy">
+                  <button class="main-popular__btn">КУПИТЬ</button>
 
-                <button class="main-popular__btn">КУПИТЬ</button>
-
-                <a
-                href="#"
-              class="main-popular__icon"
-            >
-                </a>
-
-              </div>
+                  <a href="#" class="main-popular__icon"> </a>
+                </div>
               </a>
             </li>
           </ul>
 
-          <button class="main-popular__show-more" type="button">Показать еще</button>
+          <button class="main-popular__show-more" type="button">
+            Показать еще
+          </button>
         </div>
       </section>
 
@@ -1747,29 +1748,75 @@ height="20"
         <div class="container">
           <h2 class="section__title">ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
           <ul class="main-categories__list">
-            <li class="main-categories__item"><button class="main-categories__btn">КУХНИ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">КРОВАТИ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ГОСТИННЫЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ШКАФ -КУПЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">СПАЛЬНИ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ПРИХОЖИЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ДИВАНЫ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ДЕТСКИЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">СТУЛЬЯ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">СТОЛЫ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ШКАФ -КУПЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ШКАФ -КУПЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ПРИХОЖИЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ДИВАНЫ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ГОСТИННЫЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">КУХНИ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">КРОВАТИ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ГОСТИННЫЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ШКАФ -КУПЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">СПАЛЬНИ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ПРИХОЖИЕ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ДИВАНЫ</button></li>
-            <li class="main-categories__item"><button class="main-categories__btn">ДЕТСКИЕ</button></li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">КУХНИ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">КРОВАТИ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ГОСТИННЫЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ШКАФ -КУПЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">СПАЛЬНИ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ПРИХОЖИЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ДИВАНЫ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ДЕТСКИЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">СТУЛЬЯ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">СТОЛЫ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ШКАФ -КУПЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ШКАФ -КУПЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ПРИХОЖИЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ДИВАНЫ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ГОСТИННЫЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">КУХНИ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">КРОВАТИ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ГОСТИННЫЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ШКАФ -КУПЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">СПАЛЬНИ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ПРИХОЖИЕ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ДИВАНЫ</button>
+            </li>
+            <li class="main-categories__item">
+              <button class="main-categories__btn">ДЕТСКИЕ</button>
+            </li>
           </ul>
         </div>
       </section>
@@ -1779,16 +1826,25 @@ height="20"
           <div class="main-contacts__info">
             <h2 class="section__title">НАШИ КОНТАКТЫ</h2>
 
-            <p class="main-contacts__text">Краснодар, Московская 144 корпус -1</p>
+            <p class="main-contacts__text">
+              Краснодар, Московская 144 корпус -1
+            </p>
 
-            <a href="tel:+79615259191" class="main-contacts__link">+7 961-525-91-91</a>
+            <a href="tel:+79615259191" class="main-contacts__link"
+              >+7 961-525-91-91</a
+            >
 
-            <button class="main-contacts__btn" type="button">ЗАДАТЬ ВОПРОС</button>
+            <button class="main-contacts__btn" type="button">
+              ЗАДАТЬ ВОПРОС
+            </button>
           </div>
           <div class="main-contacts__map">
-            <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Afcfe49a3f36bb2e3ac40104bab53f6747b255f28a92db9accc7002ba86c9123f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-
-
+            <iframe
+              src="https://yandex.ua/map-widget/v1/?um=constructor%3Afcfe49a3f36bb2e3ac40104bab53f6747b255f28a92db9accc7002ba86c9123f&amp;source=constructor"
+              width="100%"
+              height="100%"
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -1798,12 +1854,24 @@ height="20"
           <h2 class="section__title">МЫ В INSTAGRAM</h2>
 
           <ul class="main-inst__list">
-            <li class="main-inst__item"><img src="../img/instagram-post-1.jpg" alt=""></li>
-            <li class="main-inst__item"><img src="../img/instagram-post-2.jpg" alt=""></li>
-            <li class="main-inst__item"><img src="../img/instagram-post-3.jpg" alt=""></li>
-            <li class="main-inst__item"><img src="../img/instagram-post-4.jpg" alt=""></li>
-            <li class="main-inst__item"><img src="../img/instagram-post-5.jpg" alt=""></li>
-            <li class="main-inst__item"><img src="../img/instagram-post-6.jpg" alt=""></li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-1.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-2.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-3.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-4.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-5.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-6.jpg" alt="" />
+            </li>
           </ul>
         </div>
       </section>
@@ -1813,138 +1881,169 @@ height="20"
           <h2 class="modal__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
 
           <form action="" class="modal-feedback__form">
+            <div class="modal-feedback__field">
+              <label class="modal-feedback__label">
+                Имя*
+                <input
+                  type="text"
+                  class="modal-feedback__input"
+                  placeholder="Иван"
+                />
+              </label>
+            </div>
 
-          <div class="modal-feedback__field">
-            <label class="modal-feedback__label">
-              Имя*
-              <input type="text" class="modal-feedback__input" placeholder="Иван">
-            </label>
-          </div>
+            <div class="modal-feedback__field">
+              <label class="modal-feedback__label">
+                Телефон*
+                <input
+                  type="tel"
+                  class="modal-feedback__input"
+                  placeholder="+7 (000) 000 00 00"
+                />
+              </label>
+            </div>
 
-          <div class="modal-feedback__field">
-            <label class="modal-feedback__label">
-              Телефон*
-              <input type="tel" class="modal-feedback__input" placeholder="+7 (000) 000 00 00">
-            </label>
-          </div>  
+            <p class="modal-feedback__text">
+              * - поля, обязательные для заполнения
+            </p>
 
-          <p class="modal-feedback__text">* - поля, обязательные для заполнения</p>
-
-          <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
-
+            <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
           </form>
 
           <button class="modal-feedback__close" data-modal-close>
-            <svg
-              width="20"
-              height="20"
-            >
+            <svg width="20" height="20">
               <use href="../img/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
         </div>
       </div>
-      
     </main>
 
     <footer class="footer">
-        <div class="container ">
-          <div class="footer-container">
-  
+      <div class="container">
+        <div class="footer-container">
           <div class="footer-contacts">
             <div class="footer-logo">
-              <svg
-              class="footer-logo__icon"
-              width="165"
-              height="45"
-            >
-              <use href="../img/sprite.svg#icon-logo-footer"></use>
-            </svg></div>
-  
-            
-  
+              <svg class="footer-logo__icon" width="165" height="45">
+                <use href="../img/sprite.svg#icon-logo-footer"></use>
+              </svg>
+            </div>
+
             <a href="tel:+89615259191" class="footer-phone">
-              <svg
-                class="footer-phone__icon"
-                width="19"
-                height="19"
-              >
+              <svg class="footer-phone__icon" width="19" height="19">
                 <use href="../img/sprite.svg#icon-phone"></use>
-                      </svg>
-                      <span>8-961-525-91-91</span>
-              </a>
-  
-              <button class="footer-btn">Заказать звонок</button>
-  
+              </svg>
+              <span>8-961-525-91-91</span>
+            </a>
+
+            <button class="footer-btn">Заказать звонок</button>
+
             <div class="footer-address">
               <div class="footer-address--left">
-              
                 <p class="footer-address__text--left">Время работы:</p>
-                <p class="footer-address__text--left">Адрес
-                  <br> <br> 
+                <p class="footer-address__text--left">
+                  Адрес <br />
+                  <br />
                 </p>
                 <p class="footer-address__text--left">Почта:</p>
               </div>
               <div class="footer-address--right">
                 <p class="footer-address__text--right">с 10:00 до 19:00</p>
-                <p class="footer-address__text--right">Краснодар, <br> 
-                  ул. Московская 144 корп. - 1</p>
-                <p class="footer-address__text--right"><a href="mailto:mebelarko@mail.ru">mebelarko@mail.ru</a></p>
+                <p class="footer-address__text--right">
+                  Краснодар, <br />
+                  ул. Московская 144 корп. - 1
+                </p>
+                <p class="footer-address__text--right">
+                  <a href="mailto:mebelarko@mail.ru">mebelarko@mail.ru</a>
+                </p>
               </div>
             </div>
-  
+
             <div class="footer-inst">
               <p class="footer-inst__title">Мы в Инстаграме</p>
-              <div class="footer-inst__img"><img src="../img/instagram-icon.png" alt=""></div>
+              <div class="footer-inst__img">
+                <img src="../img/instagram-icon.png" alt="" />
+              </div>
             </div>
-  
           </div>
-  
-          
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Кухни</a></li>
-            <li class="footer-categories__item"><a href="">Модульные кухни</a></li>
-            <li class="footer-categories__item"><a href="">Готовые комплекты</a></li>
-            <li class="footer-categories__item"><a href="">Маленькие кухни</a></li>
-            <li class="footer-categories__item"><a href="">Угловые кухни</a></li>
-            <li class="footer-categories__item"><a href="">Кухонные уголки</a></li>
-            <li class="footer-categories__item"><a href="">Столы кухонные</a></li>
-            <li class="footer-categories__item"><a href="">Стулья для кухни</a></li>
-            <li class="footer-categories__item"><a href="">Комплектующие</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Модульные кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Готовые комплекты</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Маленькие кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Угловые кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Кухонные уголки</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Столы кухонные</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Стулья для кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Комплектующие</a>
+            </li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Гостинные</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Гостинные</a>
+            </li>
             <li class="footer-categories__item"><a href="">Модульные</a></li>
-            <li class="footer-categories__item"><a href="">Журнальные столы</a></li>
+            <li class="footer-categories__item">
+              <a href="">Журнальные столы</a>
+            </li>
             <li class="footer-categories__item"><a href="">Полки</a></li>
             <li class="footer-categories__item"><a href="">Тумбы под ТВ</a></li>
             <li class="footer-categories__item"><a href="">Шкафы</a></li>
             <li class="footer-categories__item"><a href="">Стеллажи</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Спальни</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Спальни</a>
+            </li>
             <li class="footer-categories__item"><a href="">Кровати</a></li>
             <li class="footer-categories__item"><a href="">Матрацы</a></li>
             <li class="footer-categories__item"><a href="">Шкафы</a></li>
             <li class="footer-categories__item"><a href="">Комоды</a></li>
-            <li class="footer-categories__item"><a href="">Столы туалетные</a></li>
-            <li class="footer-categories__item"><a href="">Тумбы прикроватные</a></li>
+            <li class="footer-categories__item">
+              <a href="">Столы туалетные</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Тумбы прикроватные</a>
+            </li>
             <li class="footer-categories__item"><a href="">Зеркала</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Диваны</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Диваны</a>
+            </li>
             <li class="footer-categories__item"><a href="">Прямые</a></li>
             <li class="footer-categories__item"><a href="">Угловые</a></li>
-            <li class="footer-categories__item"><a href="">На металлокаркасе</a></li>
+            <li class="footer-categories__item">
+              <a href="">На металлокаркасе</a>
+            </li>
             <li class="footer-categories__item"><a href="">Кресла</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Детские</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Детские</a>
+            </li>
             <li class="footer-categories__item"><a href="">Кровати</a></li>
             <li class="footer-categories__item"><a href="">Полки</a></li>
             <li class="footer-categories__item"><a href="">Столы</a></li>
@@ -1952,73 +2051,96 @@ height="20"
             <li class="footer-categories__item"><a href="">Шкафы</a></li>
             <li class="footer-categories__item"><a href="">Комоды</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Прихожие</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Прихожие</a>
+            </li>
             <li class="footer-categories__item"><a href="">Модульные</a></li>
             <li class="footer-categories__item"><a href="">Обувницы</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Шкафы-купе</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Шкафы-купе</a>
+            </li>
           </ul>
-  
+
           <div class="wrapper-footer--mob">
-  
-          <ul class="footer-categories__list--mob">
-            
-            <li class="footer-categories__item--mob"><a href="">Кухни</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Гостинные</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Спальни</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Диваны</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Детские</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Прихожие</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Шкафы-купе</a></li>
-  
-          </ul>
-  
-          <ul class="footer-categories__list--mob">
-  
-            <li class="footer-categories__item--mob"><a href="">Контакты</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Доставка и оплата</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Сборка</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Гарантии</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Акции</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Наши работы</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Политика конфиденциальности</a></li>
-  
-          </ul>
-  
+            <ul class="footer-categories__list--mob">
+              <li class="footer-categories__item--mob"><a href="">Кухни</a></li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Гостинные</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Спальни</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Диваны</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Детские</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Прихожие</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Шкафы-купе</a>
+              </li>
+            </ul>
+
+            <ul class="footer-categories__list--mob">
+              <li class="footer-categories__item--mob">
+                <a href="">Контакты</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Доставка и оплата</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Сборка</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Гарантии</a>
+              </li>
+
+              <li class="footer-categories__item--mob"><a href="">Акции</a></li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Наши работы</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-inst mob-inst">
+            <p class="footer-inst__title">Мы в Инстаграме</p>
+            <div class="footer-inst__img">
+              <img src="../img/instagram-icon.png" alt="" />
+            </div>
+          </div>
         </div>
-  
-        <div class="footer-inst mob-inst">
-          <p class="footer-inst__title">Мы в Инстаграме</p>
-          <div class="footer-inst__img"><img src="../img/instagram-icon.png" alt=""></div>
-        </div>
-      </div>
         <div class="copy">© Все права защищены</div>
-  
-        </div>
+      </div>
     </footer>
 
-    <script src="../js/modal.js"></script>
+    <script src="../js/modal.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../js/slick-slider.js"></script>
-    <script src="../js/tabs.js"></script>
-    <script src="../js/show-more.js"></script>
-    
-</body>
+    <script src="../js/slick-slider.js" type="module"></script>
+    <script src="../js/tabs.js" type="module"></script>
+    <script src="../js/show-more.js" type="module"></script>
+    <script src="../js/mobile-menu.js" type="module"></script>
+  </body>
 </html>

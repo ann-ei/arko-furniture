@@ -1,490 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-<link rel="stylesheet" href="../css/main.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <title>Гарантии</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="header desk-header">
+      <div class="top-header">
+        <div class="container">
+          <div class="top-header__wrap">
+            <div class="top-header__left">
+              <div class="top-header__location">
+                <svg class="top-header__icon" width="21" height="21">
+                  <use href="../img/sprite.svg#icon-geolocation"></use>
+                </svg>
 
-        <div class="top-header">
-            <div class="container">
+                <span class="top-header__text--left">Ростов</span>
 
-                <div class="top-header__wrap">
-
-                    <div class="top-header__left">
-                        <div class="top-header__location">
-                            <svg
-              class="top-header__icon"
-              width="21"
-              height="21"
-            >
-              <use href="../img/sprite.svg#icon-geolocation"></use>
-            </svg>
-
-            <span class="top-header__text--left">Ростов</span>
-
-            <svg
-              class="top-header__icon--select"
-              width="17"
-              height="17"
-            >
-              <use href="../img/sprite.svg#icon-arrow-down"></use>
-            </svg>
-                        </div>
-                        <ul class="top-header__list--left">
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Акции</a></li>
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Сборка</a></li>
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Оплата</a></li>
-                            <li class="top-header__item--left"><a href="" class="top-header__link">Доставка</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="top-header__right">
-                        <ul class="top-header__list--right">
-                            <li class="top-header__item--right"><a href="" class="top-header__link">Наши работы</a></li>
-                            <li class="top-header__item--right"><a href="" class="top-header__link">Контакты</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="middle-header">
-            <div class="container middle-header-container">
-
-              <div class="middle-header__wrap">
-
-                <div class="header-logo">
-                    <svg
-              class="header-logo__icon"
-              width="189"
-              height="39"
-            >
-              <use href="../img/sprite.svg#icon-logo"></use>
-            </svg>
-                </div>
-
-                <div class="header-address">
-                    <p class="header-address__text">ул. Московская, 144 корп. - 1</p>
-                    <a href="" class="header-address__link">Схема проезда</a>
-                </div>
-
+                <svg class="top-header__icon--select" width="17" height="17">
+                  <use href="../img/sprite.svg#icon-arrow-down"></use>
+                </svg>
               </div>
+              <ul class="top-header__list--left">
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Акции</a>
+                </li>
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Сборка</a>
+                </li>
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Оплата</a>
+                </li>
+                <li class="top-header__item--left">
+                  <a href="" class="top-header__link">Доставка</a>
+                </li>
+              </ul>
+            </div>
 
-                <div class="header-search">
-                    <input type="search" placeholder="Поиск" class="header-search__field">
-                    <button type="submit" class="header-search__btn">
-                        <svg
-              class="header-search__icon"
-              width="23"
-              height="23"
-            >
-              <use href="../img/sprite.svg#icon-search"></use>
-            </svg>
-                    </button>
-                </div>
+            <div class="top-header__right">
+              <ul class="top-header__list--right">
+                <li class="top-header__item--right">
+                  <a href="" class="top-header__link">Наши работы</a>
+                </li>
+                <li class="top-header__item--right">
+                  <a href="" class="top-header__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="header-phone">
-                    
-                    <div class="header-phone__wrap">
-                        <svg
-              class="header-phone__icon"
-              width="19"
-              height="19"
-            >
-              <use href="../img/sprite.svg#icon-phone"></use>
-                    </svg>
+      <div class="middle-header">
+        <div class="container middle-header-container">
+          <div class="middle-header__wrap">
+            <div class="header-logo">
+              <svg class="header-logo__icon" width="189" height="39">
+                <use href="../img/sprite.svg#icon-logo"></use>
+              </svg>
+            </div>
 
-                        <a href="tel:+89615259191" class="header-phone__link">8 (961) 525 91 91</a>
-                    </div>
+            <div class="header-address">
+              <p class="header-address__text">ул. Московская, 144 корп. - 1</p>
+              <a href="" class="header-address__link">Схема проезда</a>
+            </div>
+          </div>
 
-                    <button class="header-phone__btn" type="button" data-modal-open>Заказать звонок</button>
-                
-                </div>
+          <div class="header-search">
+            <input
+              type="search"
+              placeholder="Поиск"
+              class="header-search__field"
+            />
+            <button type="submit" class="header-search__btn">
+              <svg class="header-search__icon" width="23" height="23">
+                <use href="../img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
 
-                <div class="header-user">
+          <div class="header-phone">
+            <div class="header-phone__wrap">
+              <svg class="header-phone__icon" width="19" height="19">
+                <use href="../img/sprite.svg#icon-phone"></use>
+              </svg>
 
-                    <div class="header-sign-in">
-                      <a class="header-user__link-icon" href="#">
-                        <svg
-              class="header-user__icon"
-              width="24"
-              height="24"
-            >
-              <use href="../img/sprite.svg#icon-user"></use>
-            </svg>
-          </a>
+              <a href="tel:+89615259191" class="header-phone__link"
+                >8 (961) 525 91 91</a
+              >
+            </div>
+
+            <button class="header-phone__btn" type="button" data-modal-open>
+              Заказать звонок
+            </button>
+          </div>
+
+          <div class="header-user">
+            <div class="header-sign-in">
+              <a class="header-user__link-icon" href="#">
+                <svg class="header-user__icon" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
               <a class="header-user__link" href="#">Войти</a>
-                    </div>
+            </div>
 
-                    <div class="header-favorites">
-                      <a class="header-user__link-icon" href="#">
-                      <div class="header-favorites__img-wrap">
-                        
-                        <svg
-              class="header-favorites__icon"
-              width="24"
-              height="24"
-            >
-              <use href="../img/sprite.svg#icon-like"></use>
-            </svg>
-<div class="header-favorites__img">
-            <img src="../img/red.png" alt="" width="36">
+            <div class="header-favorites">
+              <a class="header-user__link-icon" href="#">
+                <div class="header-favorites__img-wrap">
+                  <svg class="header-favorites__icon" width="24" height="24">
+                    <use href="../img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <div class="header-favorites__img">
+                    <img src="../img/red.png" alt="" width="36" />
 
-            <span>2</span>
-          </div>
-          </div>
-        </a>
-              <a class="header-user__link" href="#">Избранное</a>
-                    </div>
-
-                    <div class="header-shopping-cart">
-                      <a class="header-user__link-icon" href="#">
-                        <svg
-              class="header-user__icon"
-              width="24"
-              height="24"
-            >
-              <use href="../img/sprite.svg#icon-cart"></use>
-            </svg>
-          </a>
-              <a class="header-user__link" href="#">Корзина</a>
-                    </div>
-
+                    <span>2</span>
+                  </div>
                 </div>
-
+              </a>
+              <a class="header-user__link" href="#">Избранное</a>
             </div>
-        </div>
 
-        <div class="bottom-header">
-            <div class="container">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a href="" class="nav-list__link">КУХНИ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ГОСТИННЫЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">СПАЛЬНИ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ПРИХОЖИЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ШКАФЫ-КУПЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ДЕТСКИЕ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ДИВАНЫ</a></li>
-                        <li class="nav-list__item"><a href="" class="nav-list__link">ГДЕ ПОСМОТРЕТЬ</a></li>
-                    </ul>
-                </nav>
+            <div class="header-shopping-cart">
+              <a class="header-user__link-icon" href="#">
+                <svg class="header-user__icon" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+              <a class="header-user__link" href="#">Корзина</a>
             </div>
+          </div>
         </div>
+      </div>
 
-
+      <div class="bottom-header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">КУХНИ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ГОСТИННЫЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">СПАЛЬНИ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ПРИХОЖИЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ШКАФЫ-КУПЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ДЕТСКИЕ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ДИВАНЫ</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">ГДЕ ПОСМОТРЕТЬ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <header class="mob-header">
       <div class="top-header--mob">
         <div class="container top-header--mob-container">
-
           <div class="top-header__location">
-            <svg
-class="top-header__icon"
-width="21"
-height="21"
->
-<use href="../img/sprite.svg#icon-geolocation"></use>
-</svg>
+            <svg class="top-header__icon" width="21" height="21">
+              <use href="../img/sprite.svg#icon-geolocation"></use>
+            </svg>
 
-<span class="top-header__text--left">Ростов</span>
+            <span class="top-header__text--left">Ростов</span>
+          </div>
 
+          <p class="header-address--mob">ул. Московская, 144 корп. - 1</p>
 
-        </div>
-
-        <p class="header-address--mob">ул. Московская, 144 корп. - 1</p>
-
-        <svg
-class="top-header__icon--select"
-width="17"
-height="17"
->
-<use href="../img/sprite.svg#icon-arrow-down"></use>
-</svg>
-
+          <svg class="top-header__icon--select" width="17" height="17">
+            <use href="../img/sprite.svg#icon-arrow-down"></use>
+          </svg>
         </div>
       </div>
 
       <div class="bottom-header--mob">
         <div class="container bottom-header--mob-container">
-          <button class="bottom-header--mob-btn">
-          <svg
-width="25"
-height="20"
->
-<use href="../img/sprite.svg#icon-menu"></use>
-</svg>
-</button>  
+          <button
+            class="bottom-header--mob-btn menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="25" height="20">
+              <use href="../img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
 
-<div class="header-logo">
-  <svg
-width="189"
-height="39"
->
-<use href="../img/sprite.svg#icon-logo"></use>
-</svg>
+          <div class="header-logo">
+            <svg width="189" height="39">
+              <use href="../img/sprite.svg#icon-logo"></use>
+            </svg>
+          </div>
 
-</div>
+          <a href="#" class="bottom-header--mob__link">
+            <svg width="16" height="17">
+              <use href="../img/sprite.svg#icon-map"></use>
+            </svg>
+            <span>Где посмотреть</span>
+          </a>
 
-<a href="#" class="bottom-header--mob__link">
-  <svg
-width="16"
-height="17"
->
-<use href="../img/sprite.svg#icon-map"></use>
-</svg>
-  <span>Где посмотреть</span>
-</a>
+          <a href="" class="bottom-header--mob__link-user">
+            <svg class="bottom-header--mob__icon-user" width="20" height="20">
+              <use href="../img/sprite.svg#icon-search-mob"></use>
+            </svg>
+          </a>
 
-<a href="" class="bottom-header--mob__link-user">
-  
-  <svg
-  class="bottom-header--mob__icon-user"
-  width="20"
-  height="20"
-  >
-  <use href="../img/sprite.svg#icon-search-mob"></use>
-  </svg>
+          <a href="" class="bottom-header--mob__link-user">
+            <svg class="bottom-header--mob__icon-user" width="20" height="20">
+              <use href="../img/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
 
-</a>
-
-<a href="" class="bottom-header--mob__link-user">
-
-  <svg
-  class="bottom-header--mob__icon-user"
-width="20"
-height="20"
->
-<use href="../img/sprite.svg#icon-phone"></use>
-</svg>
-
-</a>
-
-<a href="" class="bottom-header--mob__link-user">
-
-  <svg
-  class="bottom-header--mob__icon-user"
-width="20"
-height="20"
->
-<use href="../img/sprite.svg#icon-cart"></use>
-</svg>
-
-</a>
-
+          <a href="" class="bottom-header--mob__link-user">
+            <svg class="bottom-header--mob__icon-user" width="20" height="20">
+              <use href="../img/sprite.svg#icon-cart"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </header>
 
     <main>
-        <section class="guarantees__section">
-            <div class="container">
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <!-- <svg width="40" height="40">
+            <use
+              class="menu__icon--menu js-close-menu"
+              href="../img/icons8-close.svg"
+            ></use>
+          </svg> -->
+          <img
+            src="../img/icons8-close-30.svg"
+            alt=""
+            class="menu__icon--menu js-close-menu"
+            width="30"
+            height="30"
+          />
+        </button>
 
-                <div class="breadcrumps">
-                    <a href="#">Главная</a> > <span>Гарантийные условия</span>
-                </div>
-
-                <div class="account__title-wrap">
-
-                    <h2 class="account__title">ГАРАНТИЙНЫЕ УСЛОВИЯ</h2>
-                </div>
-
-                <div class="guarantees__text-wrap">
-                    <p class="guarantees__text">Работаем согласно закону о защите прав потребителей.
-                    </p>
-                    <p class="guarantees__text">Гарантия на всю представленную продукцию - <b>18 месяцев</b>, за исключением изделий для сидения и лежания - <b>12 месяцев</b>.
-                    </p>
-                    <p class="guarantees__text">Важно! Перед тем как начать сборку изделий, необходимо произвести визуальный осмотр на предмет целостности мебели. Если есть детали с браком - такие детали собирать не нужно, т.к. претензии о визуальных недостатках мебели, вызванных физическим воздействием на нее (сколах, царапинах, трещинах и т.д.) после сборки изделия не принимаются (только перед сборкой). Так же до конца сборки необходимо сохранять упаковки, без упаковки - претензии не принимаются.</p>
-                </div>
-
-               
-
-            </div>
-        </section>
-
-        <section class="main-contacts">
-            <div class="container main-contacts-container">
-              <div class="main-contacts__info">
-                <h2 class="section__title">НАШИ КОНТАКТЫ</h2>
-    
-                <p class="main-contacts__text">Краснодар, Московская 144 корпус -1</p>
-    
-                <a href="tel:+79615259191" class="main-contacts__link">+7 961-525-91-91</a>
-    
-                <button class="main-contacts__btn" type="button">ЗАДАТЬ ВОПРОС</button>
-              </div>
-              <div class="main-contacts__map">
-                <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Afcfe49a3f36bb2e3ac40104bab53f6747b255f28a92db9accc7002ba86c9123f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-    
-    
-              </div>
-            </div>
-          </section>
-    
-          <section class="main-instagram">
-            <div class="container">
-              <h2 class="section__title">МЫ В INSTAGRAM</h2>
-    
-              <ul class="main-inst__list">
-                <li class="main-inst__item"><img src="../img/instagram-post-1.jpg" alt=""></li>
-                <li class="main-inst__item"><img src="../img/instagram-post-2.jpg" alt=""></li>
-                <li class="main-inst__item"><img src="../img/instagram-post-3.jpg" alt=""></li>
-                <li class="main-inst__item"><img src="../img/instagram-post-4.jpg" alt=""></li>
-                <li class="main-inst__item"><img src="../img/instagram-post-5.jpg" alt=""></li>
-                <li class="main-inst__item"><img src="../img/instagram-post-6.jpg" alt=""></li>
-              </ul>
-            </div>
-          </section>
-
-          <div class="backdrop is-hidden" data-backdrop>
-            <div class="modal-feedback">
-              <h2 class="modal__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
-    
-              <form action="" class="modal-feedback__form">
-    
-              <div class="modal-feedback__field">
-                <label class="modal-feedback__label">
-                  Имя*
-                  <input type="text" class="modal-feedback__input" placeholder="Иван">
-                </label>
-              </div>
-    
-              <div class="modal-feedback__field">
-                <label class="modal-feedback__label">
-                  Телефон*
-                  <input type="tel" class="modal-feedback__input" placeholder="+7 (000) 000 00 00">
-                </label>
-              </div>  
-    
-              <p class="modal-feedback__text">* - поля, обязательные для заполнения</p>
-    
-              <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
-    
-              </form>
-    
-              <button class="modal-feedback__close" data-modal-close>
-                <svg
-                  width="20"
-                  height="20"
-                >
-                  <use href="../img/sprite.svg#icon-menu-close"></use>
-                </svg>
-              </button>
-            </div>
+        <ul class="nav-list--mob">
+          <li class="nav-item--mob"><a href="">КУХНИ</a></li>
+          <li class="nav-item--mob"><a href="">ГОСТИННЫЕ</a></li>
+          <li class="nav-item--mob"><a href="">СПАЛЬНИ</a></li>
+          <li class="nav-item--mob"><a href="">ПРИХОЖИЕ</a></li>
+          <li class="nav-item--mob"><a href="">ШКАФЫ-КУПЕ</a></li>
+          <li class="nav-item--mob"><a href="">ДЕТСКИЕ</a></li>
+          <li class="nav-item--mob"><a href="">ДИВАНЫ</a></li>
+          <li class="nav-item--mob"><a href="">ГДЕ ПОСМОТРЕТЬ</a></li>
+        </ul>
+      </div>
+      <section class="guarantees__section">
+        <div class="container">
+          <div class="breadcrumps">
+            <a href="#">Главная</a> > <span>Гарантийные условия</span>
           </div>
+
+          <div class="account__title-wrap">
+            <h2 class="account__title">ГАРАНТИЙНЫЕ УСЛОВИЯ</h2>
+          </div>
+
+          <div class="guarantees__text-wrap">
+            <p class="guarantees__text">
+              Работаем согласно закону о защите прав потребителей.
+            </p>
+            <p class="guarantees__text">
+              Гарантия на всю представленную продукцию - <b>18 месяцев</b>, за
+              исключением изделий для сидения и лежания - <b>12 месяцев</b>.
+            </p>
+            <p class="guarantees__text">
+              Важно! Перед тем как начать сборку изделий, необходимо произвести
+              визуальный осмотр на предмет целостности мебели. Если есть детали
+              с браком - такие детали собирать не нужно, т.к. претензии о
+              визуальных недостатках мебели, вызванных физическим воздействием
+              на нее (сколах, царапинах, трещинах и т.д.) после сборки изделия
+              не принимаются (только перед сборкой). Так же до конца сборки
+              необходимо сохранять упаковки, без упаковки - претензии не
+              принимаются.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-contacts">
+        <div class="container main-contacts-container">
+          <div class="main-contacts__info">
+            <h2 class="section__title">НАШИ КОНТАКТЫ</h2>
+
+            <p class="main-contacts__text">
+              Краснодар, Московская 144 корпус -1
+            </p>
+
+            <a href="tel:+79615259191" class="main-contacts__link"
+              >+7 961-525-91-91</a
+            >
+
+            <button class="main-contacts__btn" type="button">
+              ЗАДАТЬ ВОПРОС
+            </button>
+          </div>
+          <div class="main-contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.89478155322!2d39.00000407579987!3d45.08792675846616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f044354c000001%3A0xa3bb07a8a5494a4e!2z0YPQuy4g0JzQvtGB0LrQvtCy0YHQutCw0Y8sIDE0NCDQmtC-0YDQv9GD0YEgMSwg0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGPLCAzNTAwNzI!5e0!3m2!1sru!2sat!4v1702416219215!5m2!1sru!2sat"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-instagram">
+        <div class="container">
+          <h2 class="section__title">МЫ В INSTAGRAM</h2>
+
+          <ul class="main-inst__list">
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-1.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-2.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-3.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-4.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-5.jpg" alt="" />
+            </li>
+            <li class="main-inst__item">
+              <img src="../img/instagram-post-6.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal-feedback">
+          <h2 class="modal__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
+
+          <form action="" class="modal-feedback__form">
+            <div class="modal-feedback__field">
+              <label class="modal-feedback__label">
+                Имя*
+                <input
+                  type="text"
+                  class="modal-feedback__input"
+                  placeholder="Иван"
+                />
+              </label>
+            </div>
+
+            <div class="modal-feedback__field">
+              <label class="modal-feedback__label">
+                Телефон*
+                <input
+                  type="tel"
+                  class="modal-feedback__input"
+                  placeholder="+7 (000) 000 00 00"
+                />
+              </label>
+            </div>
+
+            <p class="modal-feedback__text">
+              * - поля, обязательные для заполнения
+            </p>
+
+            <button class="modal-feedback__btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+          </form>
+
+          <button class="modal-feedback__close" data-modal-close>
+            <svg width="20" height="20">
+              <use href="../img/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="container ">
-          <div class="footer-container">
-  
+      <div class="container">
+        <div class="footer-container">
           <div class="footer-contacts">
             <div class="footer-logo">
-              <svg
-              class="footer-logo__icon"
-              width="165"
-              height="45"
-            >
-              <use href="../img/sprite.svg#icon-logo-footer"></use>
-            </svg></div>
-  
-            
-  
+              <svg class="footer-logo__icon" width="165" height="45">
+                <use href="../img/sprite.svg#icon-logo-footer"></use>
+              </svg>
+            </div>
+
             <a href="tel:+89615259191" class="footer-phone">
-              <svg
-                class="footer-phone__icon"
-                width="19"
-                height="19"
-              >
+              <svg class="footer-phone__icon" width="19" height="19">
                 <use href="../img/sprite.svg#icon-phone"></use>
-                      </svg>
-                      <span>8-961-525-91-91</span>
-              </a>
-  
-              <button class="footer-btn">Заказать звонок</button>
-  
+              </svg>
+              <span>8-961-525-91-91</span>
+            </a>
+
+            <button class="footer-btn">Заказать звонок</button>
+
             <div class="footer-address">
               <div class="footer-address--left">
-              
                 <p class="footer-address__text--left">Время работы:</p>
-                <p class="footer-address__text--left">Адрес
-                  <br> <br> 
+                <p class="footer-address__text--left">
+                  Адрес <br />
+                  <br />
                 </p>
                 <p class="footer-address__text--left">Почта:</p>
               </div>
               <div class="footer-address--right">
                 <p class="footer-address__text--right">с 10:00 до 19:00</p>
-                <p class="footer-address__text--right">Краснодар, <br> 
-                  ул. Московская 144 корп. - 1</p>
-                <p class="footer-address__text--right"><a href="mailto:mebelarko@mail.ru">mebelarko@mail.ru</a></p>
+                <p class="footer-address__text--right">
+                  Краснодар, <br />
+                  ул. Московская 144 корп. - 1
+                </p>
+                <p class="footer-address__text--right">
+                  <a href="mailto:mebelarko@mail.ru">mebelarko@mail.ru</a>
+                </p>
               </div>
             </div>
-  
+
             <div class="footer-inst">
               <p class="footer-inst__title">Мы в Инстаграме</p>
-              <div class="footer-inst__img"><img src="../img/instagram-icon.png" alt=""></div>
+              <div class="footer-inst__img">
+                <img src="../img/instagram-icon.png" alt="" />
+              </div>
             </div>
-  
           </div>
-  
-          
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Кухни</a></li>
-            <li class="footer-categories__item"><a href="">Модульные кухни</a></li>
-            <li class="footer-categories__item"><a href="">Готовые комплекты</a></li>
-            <li class="footer-categories__item"><a href="">Маленькие кухни</a></li>
-            <li class="footer-categories__item"><a href="">Угловые кухни</a></li>
-            <li class="footer-categories__item"><a href="">Кухонные уголки</a></li>
-            <li class="footer-categories__item"><a href="">Столы кухонные</a></li>
-            <li class="footer-categories__item"><a href="">Стулья для кухни</a></li>
-            <li class="footer-categories__item"><a href="">Комплектующие</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Модульные кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Готовые комплекты</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Маленькие кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Угловые кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Кухонные уголки</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Столы кухонные</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Стулья для кухни</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Комплектующие</a>
+            </li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Гостинные</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Гостинные</a>
+            </li>
             <li class="footer-categories__item"><a href="">Модульные</a></li>
-            <li class="footer-categories__item"><a href="">Журнальные столы</a></li>
+            <li class="footer-categories__item">
+              <a href="">Журнальные столы</a>
+            </li>
             <li class="footer-categories__item"><a href="">Полки</a></li>
             <li class="footer-categories__item"><a href="">Тумбы под ТВ</a></li>
             <li class="footer-categories__item"><a href="">Шкафы</a></li>
             <li class="footer-categories__item"><a href="">Стеллажи</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Спальни</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Спальни</a>
+            </li>
             <li class="footer-categories__item"><a href="">Кровати</a></li>
             <li class="footer-categories__item"><a href="">Матрацы</a></li>
             <li class="footer-categories__item"><a href="">Шкафы</a></li>
             <li class="footer-categories__item"><a href="">Комоды</a></li>
-            <li class="footer-categories__item"><a href="">Столы туалетные</a></li>
-            <li class="footer-categories__item"><a href="">Тумбы прикроватные</a></li>
+            <li class="footer-categories__item">
+              <a href="">Столы туалетные</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="">Тумбы прикроватные</a>
+            </li>
             <li class="footer-categories__item"><a href="">Зеркала</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Диваны</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Диваны</a>
+            </li>
             <li class="footer-categories__item"><a href="">Прямые</a></li>
             <li class="footer-categories__item"><a href="">Угловые</a></li>
-            <li class="footer-categories__item"><a href="">На металлокаркасе</a></li>
+            <li class="footer-categories__item">
+              <a href="">На металлокаркасе</a>
+            </li>
             <li class="footer-categories__item"><a href="">Кресла</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Детские</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Детские</a>
+            </li>
             <li class="footer-categories__item"><a href="">Кровати</a></li>
             <li class="footer-categories__item"><a href="">Полки</a></li>
             <li class="footer-categories__item"><a href="">Столы</a></li>
@@ -492,68 +540,91 @@ height="20"
             <li class="footer-categories__item"><a href="">Шкафы</a></li>
             <li class="footer-categories__item"><a href="">Комоды</a></li>
           </ul>
-  
+
           <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Прихожие</a></li>
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Прихожие</a>
+            </li>
             <li class="footer-categories__item"><a href="">Модульные</a></li>
             <li class="footer-categories__item"><a href="">Обувницы</a></li>
           </ul>
-  
-          <ul class="footer-categoies__list">
-            <li class="footer-categories__item"><a href="" id="footer-categories__link">Шкафы-купе</a></li>
-          </ul>
-  
-          <div class="wrapper-footer--mob">
-  
-          <ul class="footer-categories__list--mob">
-            
-            <li class="footer-categories__item--mob"><a href="">Кухни</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Гостинные</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Спальни</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Диваны</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Детские</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Прихожие</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Шкафы-купе</a></li>
-  
-          </ul>
-  
-          <ul class="footer-categories__list--mob">
-  
-            <li class="footer-categories__item--mob"><a href="">Контакты</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Доставка и оплата</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Сборка</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Гарантии</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Акции</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Наши работы</a></li>
-  
-            <li class="footer-categories__item--mob"><a href="">Политика конфиденциальности</a></li>
-  
-          </ul>
-  
-        </div>
-  
-        <div class="footer-inst mob-inst">
-          <p class="footer-inst__title">Мы в Инстаграме</p>
-          <div class="footer-inst__img"><img src="../img/instagram-icon.png" alt=""></div>
-        </div>
-      </div>
-        <div class="copy">© Все права защищены</div>
-  
-        </div>
-      </footer>
 
-      <script src="../js/modal.js"></script>
-    
-</body>
+          <ul class="footer-categoies__list">
+            <li class="footer-categories__item">
+              <a href="" id="footer-categories__link">Шкафы-купе</a>
+            </li>
+          </ul>
+
+          <div class="wrapper-footer--mob">
+            <ul class="footer-categories__list--mob">
+              <li class="footer-categories__item--mob"><a href="">Кухни</a></li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Гостинные</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Спальни</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Диваны</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Детские</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Прихожие</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Шкафы-купе</a>
+              </li>
+            </ul>
+
+            <ul class="footer-categories__list--mob">
+              <li class="footer-categories__item--mob">
+                <a href="">Контакты</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Доставка и оплата</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Сборка</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Гарантии</a>
+              </li>
+
+              <li class="footer-categories__item--mob"><a href="">Акции</a></li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Наши работы</a>
+              </li>
+
+              <li class="footer-categories__item--mob">
+                <a href="">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-inst mob-inst">
+            <p class="footer-inst__title">Мы в Инстаграме</p>
+            <div class="footer-inst__img">
+              <img src="../img/instagram-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="copy">© Все права защищены</div>
+      </div>
+    </footer>
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/mobile-menu.js" type="module"></script>
+  </body>
 </html>

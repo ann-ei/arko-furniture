@@ -249,12 +249,19 @@
     <main>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg width="40" height="40">
+          <!-- <svg width="40" height="40">
             <use
               class="menu__icon--menu js-close-menu"
-              href="images/sprite.svg#mobile-close"
+              href="../img/icons8-close.svg"
             ></use>
-          </svg>
+          </svg> -->
+          <img
+            src="../img/icons8-close-30.svg"
+            alt=""
+            class="menu__icon--menu js-close-menu"
+            width="30"
+            height="30"
+          />
         </button>
 
         <ul class="nav-list--mob">
@@ -1417,7 +1424,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../js/slick-slider.js"></script>
-    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/slick-slider.js" type="module"></script>
+    <script src="../js/mobile-menu.js" type="module"></script>
   </body>
 </html>

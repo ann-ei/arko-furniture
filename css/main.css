@@ -887,8 +887,7 @@ span.main-popular__label {
 }
 @media screen and (max-width: 767px) {
   .main-popular__squares {
-    visibility: initial;
-    opacity: 1;
+    display: none;
   }
 }
 
@@ -944,7 +943,7 @@ span.main-popular__label {
   background-color: #fff;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .menu-container {
@@ -953,9 +952,9 @@ span.main-popular__label {
   right: 0;
   width: 55vw;
   height: 100vh;
-  padding: 32px;
+  padding: 72px 32px 32px 32px;
   background-color: #fff;
-  z-index: 999;
+  z-index: 1000;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -969,6 +968,16 @@ span.main-popular__label {
   }
 }
 
+.nav-item--mob {
+  margin-bottom: 10px;
+  border-bottom: 2px #ccc solid;
+  padding-bottom: 10px;
+}
+
+.nav-item--mob a {
+  color: #000000;
+}
+
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -979,6 +988,7 @@ span.main-popular__label {
   top: 16px;
   right: 16px;
   color: #fff;
+  background-color: transparent;
 }
 
 .nav-list--mobile {
@@ -2751,9 +2761,9 @@ ul.pagination li a.active {
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
-  color: #1D1818;
+  color: #1d1818;
   padding: 24px 0;
-  border-bottom: 1px solid #E2E2E2;
+  border-bottom: 1px solid #e2e2e2;
 }
 @media screen and (max-width: 767px) {
   .orders-new__table-name {
@@ -2789,9 +2799,9 @@ ul.pagination li a.active {
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
-  color: #1D1818;
+  color: #1d1818;
   padding: 24px 0;
-  border-bottom: 1px solid #E2E2E2;
+  border-bottom: 1px solid #e2e2e2;
 }
 @media screen and (max-width: 767px) {
   .orders-new__table-order {
@@ -2822,7 +2832,7 @@ ul.pagination li a.active {
 }
 
 .orders-new__table-status .order-new__status {
-  background: #0E9F2E;
+  background: #0e9f2e;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -2880,7 +2890,7 @@ ul.pagination li a.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
 }
 @media screen and (max-width: 479px) {
   .orders-new__content-name {
@@ -2893,7 +2903,7 @@ ul.pagination li a.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
 }
 @media screen and (max-width: 1023px) {
   .orders-new__quantity {
@@ -2918,7 +2928,7 @@ ul.pagination li a.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  color: #384D54;
+  color: #384d54;
 }
 @media screen and (max-width: 1023px) {
   .orders-new__content-name span {
@@ -2938,9 +2948,14 @@ ul.pagination li a.active {
 }
 
 .content_block {
-  background: #F9F9F9;
+  background: #f9f9f9;
   border-radius: 5px;
   padding: 45px 0;
+}
+@media screen and (max-width: 767px) {
+  .content_block {
+    padding: 45px 20px;
+  }
 }
 
 .order-accepted__title {
@@ -4067,7 +4082,7 @@ ul.pagination li a.active {
 }
 @media screen and (max-width: 479px) {
   .about-welcome__img {
-    width: 320px;
+    width: 295px;
   }
 }
 
@@ -4075,7 +4090,7 @@ ul.pagination li a.active {
   font-weight: 700;
   font-size: 25px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
   margin-bottom: 43px;
 }
 @media screen and (max-width: 1023px) {
@@ -4089,7 +4104,7 @@ ul.pagination li a.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
 }
 
 .about-welcome__content {
@@ -4171,7 +4186,7 @@ ul.pagination li a.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
   margin-bottom: 30px;
 }
 
@@ -4245,7 +4260,7 @@ ul.pagination li a.active {
   position: absolute;
   width: 770px;
   height: 322px;
-  background: #A8D1E7;
+  background: #a8d1e7;
   border-radius: 5px;
   z-index: -1;
   top: -30px;
@@ -4316,7 +4331,7 @@ ul.pagination li a.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
 }
 
 .about-benefits__list {
@@ -4378,7 +4393,7 @@ ul.pagination li a.active {
   font-weight: 700;
   font-size: 25px;
   line-height: 1.3;
-  color: #1D1818;
+  color: #1d1818;
   margin-bottom: 45px;
 }
 
